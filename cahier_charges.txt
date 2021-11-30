@@ -1,0 +1,11 @@
+Ecriture de l'histoire
+page html
+page css
+fonction js enlever les choix non-choisi
+fonction js changement de temps
+animation personnage qui parle
+responsive web design
+maquette
+création projet git (une branche chacun, une master et une test)
+2 json pour l'histoire et les choix
+(random avant les games over)
