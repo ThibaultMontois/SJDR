@@ -12,7 +12,6 @@
     --borderRadius:5px;
 
     --img-size: 56px;
-    --background-image : url("../img/backgrounds/background_night.jpg");
     --icons-content : url(../img/icons/moon.png);
     --white: whitesmoke;
 }
@@ -22,7 +21,6 @@ body{
 }
 main{
     background-color: var(--color-1);
-    background-image: var(--background-image);
 }
 
 nav{
