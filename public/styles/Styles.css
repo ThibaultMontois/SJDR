@@ -1,0 +1,68 @@
+:root {
+    --font-1:'Libre Baskerville', serif;
+    --font-2:'Time New Roman' ;
+    --font-P:'Dancing Script', cursive;
+    
+    --color-1:#1A4E78;
+    --color-2:#81C3F9;
+    --color-3:#36A1F7;
+    --color-4:#004780;
+    --color-5:#2B7FC4;
+    --white: whitesmoke;
+    
+    
+    --borderRadius:5px;
+}
+
+body{
+    background-color: var(--color-1);
+    
+}
+main{
+    background-color: var(--color-1);
+}
+
+nav{
+    background-color: var(--color-4);
+    width: 105%;
+    margin-left: -4%;
+    margin-top: -1%;
+    height: 6vh;
+   
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    color: var(--color-3);
+    flex-direction: row;
+    border: var(--color-5) solid 0.4vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.4%;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+li:hover{ 
+    background-color: var(--color-3);
+    border: var(--color-3) solid 0.4vh;
+}
+a:hover{
+    color: var(--white);
+}
+
+#recit{
+    width: 90%;
+    margin: auto;
+    background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+p {
+    color: var(--white);
+}
