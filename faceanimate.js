@@ -6,7 +6,10 @@ function faceanimate(){
   /* setTimeout(removefaceanimate(), 100000); */
 }
  function removefaceanimate(){
-  const recit=document.getElementById('bot')
-  recit.innerHTML="";
+  const bot=document.getElementById('bot')
+  bot.innerHTML="";
+  const recit=document.getElementById('recit')
+  recit.remove(bot);
+   
 } 
 
