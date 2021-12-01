@@ -1,0 +1,96 @@
+:root {
+    --font-1:'Libre Baskerville', serif;
+    --font-2:'Time New Roman' ;
+    --font-P:'Dancing Script', cursive;
+    
+    --color-1:#1A4E78;
+    --color-2:#81C3F9;
+    --color-3:#36A1F7;
+    --color-4:#004780;
+    --color-5:#2B7FC4;
+  
+    --borderRadius:5px;
+
+    --img-size: 56px;
+    --background-image : url("../img/backgrounds/background_night.jpg");
+    --icons-content : url(../img/icons/moon.png);
+    --white: whitesmoke;
+}
+
+body{
+    background-color: var(--color-1);
+}
+main{
+    background-color: var(--color-1);
+    background-image: var(--background-image);
+}
+
+nav{
+    background-color: var(--color-4);
+    width: 105%;
+    margin-left: -4%;
+    margin-top: -1%;
+    height: 6vh;   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    color: var(--color-3);
+    flex-direction: row;
+    border: var(--color-5) solid 0.4vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.4%;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+#timeline {
+    padding: 12px 0;
+}
+
+#timeline ol {
+    display: flex; 
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 6px 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+#timeline ol li {
+    visibility: hidden;
+}
+
+#timeline ol li img {
+    width: var(--img-size);
+    height: var(--img-size);
+    content: var(--icons-content);
+}
+
+
+li:hover{ 
+    background-color: var(--color-3);
+    border: var(--color-3) solid 0.4vh;
+}
+a:hover{
+    color: var(--white);
+}
+
+#recit{
+    width: 90%;
+    margin: auto;
+    background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+p {
+    color: var(--white);
+}

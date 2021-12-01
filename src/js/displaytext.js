@@ -9,7 +9,7 @@ function readJsonFile(file, callback) {
     };
     textFile.send(null);
 }
-readJsonFile("histoire.json", function(text) {
+readJsonFile("../src/json/histoire.json", function(text) {
     let data = JSON.parse(text);
     document.getElementById("recit").innerHTML = data.histoire1;
 });
