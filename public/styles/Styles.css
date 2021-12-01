@@ -90,8 +90,13 @@ a:hover{
     margin: auto;
     background-color: var(--color-4);
     border-radius: 10px;
+    height: 70vh;
 }
 
+h1{
+    color: var(--white);
+    text-align: center;
+}
 p {
     color: var(--white);
 }
