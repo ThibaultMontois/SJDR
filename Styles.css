@@ -8,6 +8,7 @@
     --color-3:#36A1F7;
     --color-4:#004780;
     --color-5:#2B7FC4;
+    --white: whitesmoke;
     
     
     --borderRadius:5px;
@@ -15,6 +16,7 @@
 
 body{
     background-color: var(--color-1);
+    
 }
 main{
     background-color: var(--color-1);
@@ -25,29 +27,39 @@ nav{
     width: 105%;
     margin-left: -4%;
     margin-top: -1%;
-    height: 3vh;
+    height: 6vh;
    
 }
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-top: 1%;
 }
 
 nav ul li {
     color: var(--color-3);
-    margin: auto;
     flex-direction: row;
     border: var(--color-5) solid 0.4vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 1%;
+
 }
 
 li a {
     text-decoration: none;
     color: var(--color-3);
+    margin-top: 20%;
 }
 
 #recit{
+    
+    width: 90%;
+    margin: auto;
     margin-top: 5%;
-    width: auto;
     background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+p {
+    color: var(--white);
 }
