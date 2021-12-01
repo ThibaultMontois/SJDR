@@ -1,16 +1,13 @@
-<div id="bot" class="neutral">
-<div id="head">
-  <div id="left-ear">
-    <div id="left-ear-inner"></div>
-  </div>
-  <div id="face">
-    <div id="eyes">
-      <div id="left-eye"></div>
-      <div id="right-eye"></div>
-    </div>
-    <div id="mouth"></div>
-  </div>
-  <div id="right-ear">
-    <div id="right-ear-inner"></div>
-  </div>
-</div>
+function faceanimate(){
+  const recit=document.getElementById("recit")
+  const face='<div id="bot" class="neutral"><div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>'
+  recit.innerHTML=face;
+  setInterval(removefaceanimate, 10000);
+}
+ function removefaceanimate(){
+  const bot=document.getElementById('bot')
+  bot.innerHTML="";
+  const recit=document.getElementById('recit')
+  recit.remove(bot);
+   
+} 

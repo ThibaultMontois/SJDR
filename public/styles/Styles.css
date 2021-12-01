@@ -8,13 +8,13 @@
     --color-3:#36A1F7;
     --color-4:#004780;
     --color-5:#2B7FC4;
-    
-    
+  
     --borderRadius:5px;
 
     --img-size: 56px;
     --background-image : url("../img/backgrounds/background_night.jpg");
     --icons-content : url(../img/icons/moon.png);
+    --white: whitesmoke;
 }
 
 body{
@@ -30,20 +30,21 @@ nav{
     width: 105%;
     margin-left: -4%;
     margin-top: -1%;
-    height: 3vh;
-   
+    height: 6vh;   
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-top: 1%;
 }
 
 nav ul li {
     color: var(--color-3);
-    margin: auto;
     flex-direction: row;
     border: var(--color-5) solid 0.4vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.4%;
 }
 
 li a {
@@ -74,8 +75,22 @@ li a {
     content: var(--icons-content);
 }
 
+
+li:hover{ 
+    background-color: var(--color-3);
+    border: var(--color-3) solid 0.4vh;
+}
+a:hover{
+    color: var(--white);
+}
+
 #recit{
-    /* margin-top: 3%; */
-    width: auto;
+    width: 90%;
+    margin: auto;
     background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+p {
+    color: var(--white);
 }
