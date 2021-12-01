@@ -41,21 +41,24 @@ nav ul li {
     border: var(--color-5) solid 0.4vh;
     align-items: center;
     margin: auto;
-    margin-top: 1%;
-
+    margin-top: 0.4%;
 }
 
 li a {
     text-decoration: none;
     color: var(--color-3);
-    margin-top: 20%;
+}
+li:hover{ 
+    background-color: var(--color-3);
+    border: var(--color-3) solid 0.4vh;
+}
+a:hover{
+    color: var(--white);
 }
 
 #recit{
-    
     width: 90%;
     margin: auto;
-    margin-top: 5%;
     background-color: var(--color-4);
     border-radius: 10px;
 }

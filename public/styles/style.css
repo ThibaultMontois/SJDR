@@ -4,10 +4,10 @@
   #bot {
     position: relative;
     text-align: left;
-    width: 14em;
-    height: 14em;
-    min-width: 5em;
-    min-height: 5em;
+    width: 7em;
+    height: 7em;
+    min-width: 4em;
+    min-height: 4em;
     /*border: 1px solid lightblue;*/
     margin: 0 auto;
   }
@@ -49,7 +49,8 @@
   }
   
   #right-ear {
-    right: -14%;
+    right: -22%;
+    
   }
   
   #left-ear-inner,
