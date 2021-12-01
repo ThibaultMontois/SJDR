@@ -10,7 +10,7 @@
     min-width: 4em;
     min-height: 4em;
     /*border: 1px solid lightblue;*/
-    margin: 0 auto;
+    margin: 0 0 6% 2%;
   }
   
   #head {
@@ -103,7 +103,7 @@
     border-bottom: 0.2em solid var(--color-3);
     border-top: 0em solid var(--color-3);
     border-radius: 0.5em;
-    left: 35%;
+    left: 32%;
     bottom: 20%;
   }
   
@@ -149,7 +149,7 @@
     animation: mouth 1s infinite ease alternate;
   }
   
-  @keyframes mouth {
+   @keyframes mouth {
     0% {
       width: 10%;
       height: 4%;
@@ -175,7 +175,7 @@
       height: 4%;
       left: 35%;
     }
-  }
+  } 
   
 
   

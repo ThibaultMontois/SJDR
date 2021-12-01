@@ -23,6 +23,7 @@ body{
 main{
     background-color: var(--color-1);
     background-image: var(--background-image);
+    height: 98vh;
 }
 
 nav{
