@@ -1,0 +1,53 @@
+:root {
+    --font-1:'Libre Baskerville', serif;
+    --font-2:'Time New Roman' ;
+    --font-P:'Dancing Script', cursive;
+    
+    --color-1:#1A4E78;
+    --color-2:#81C3F9;
+    --color-3:#36A1F7;
+    --color-4:#004780;
+    --color-5:#2B7FC4;
+    
+    
+    --borderRadius:5px;
+}
+
+body{
+    background-color: var(--color-1);
+}
+main{
+    background-color: var(--color-1);
+}
+
+nav{
+    background-color: var(--color-4);
+    width: 105%;
+    margin-left: -4%;
+    margin-top: -1%;
+    height: 3vh;
+   
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1%;
+}
+
+nav ul li {
+    color: var(--color-3);
+    margin: auto;
+    flex-direction: row;
+    border: var(--color-5) solid 0.4vh;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+#recit{
+    margin-top: 5%;
+    width: auto;
+    background-color: var(--color-4);
+}
