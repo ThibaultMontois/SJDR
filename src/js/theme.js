@@ -22,6 +22,26 @@ readJsonFile("../src/json/theme.json", function(text) {
 
 /****************************************************************************/
 
+/****************************************************************************/
+
+function readJsonFile(file, callback) {
+    let textFile = new XMLHttpRequest();
+    textFile.overrideMimeType("application/json");
+    textFile.open("GET", file, true);
+    textFile.onreadystatechange = function() {
+        if (textFile.readyState === 4 && textFile.status == "200") {
+            callback(textFile.responseText);
+        }
+    };
+    textFile.send(null);
+}
+
+readJsonFile("../src/json/theme.json", function(text) {
+    let data = JSON.parse(text);
+    document.getElementById("timeline").innerHTML = "<p>"+data['test']+"</p>";
+});
+
+
 function initiate() {
     background = theme.beach.background;
     icon = theme.beach.icon;
