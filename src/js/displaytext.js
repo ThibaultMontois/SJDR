@@ -18,4 +18,3 @@ readJsonFile("../src/json/histoire.json", function(text) {
 function clickchoix(id){
 
 }
-
