@@ -1,0 +1,14 @@
+{
+    "histoire1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum. Nunc semper augue volutpat nibh iaculis, ac porta risus efficitur. Donec porta consectetur dui ac venenatis. Cras ullamcorper vel risus id imperdiet. Nam tincidunt vehicula imperdiet. Donec vitae molestie sem. Nulla eu tortor sapien. Nam posuere mauris nisl, eget fermentum neque feugiat quis. Integer efficitur dui vitae est efficitur blandit. Praesent in lectus sed lectus dignissim viverra eu at diam. Proin a elit enim. Aenean id sagittis risus. Suspendisse potenti. Phasellus maximus risus fermentum mi convallis convallis.",
+    "histoire2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum. Nunc semper augue volutpat nibh iaculis, ac porta risus efficitur. Donec porta consectetur dui ac venenatis. Cras ullamcorper vel risus id imperdiet. Nam tincidunt vehicula imperdiet. Donec vitae molestie sem. Nulla eu tortor sapien. Nam posuere mauris nisl, eget fermentum neque feugiat quis. Integer efficitur dui vitae est efficitur blandit. Praesent in lectus sed lectus dignissim viverra eu at diam. Proin a elit enim. Aenean id sagittis risus. Suspendisse potenti. Phasellus maximus risus fermentum mi convallis convallis.",
+    "histoire3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum. Nunc semper augue volutpat nibh iaculis, ac porta risus efficitur. Donec porta consectetur dui ac venenatis. Cras ullamcorper vel risus id imperdiet. Nam tincidunt vehicula imperdiet. Donec vitae molestie sem. Nulla eu tortor sapien. Nam posuere mauris nisl, eget fermentum neque feugiat quis. Integer efficitur dui vitae est efficitur blandit. Praesent in lectus sed lectus dignissim viverra eu at diam. Proin a elit enim. Aenean id sagittis risus. Suspendisse potenti. Phasellus maximus risus fermentum mi convallis convallis.",
+    "choix1": [{ "numero1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum."}],
+    "choix2": [{ "numero1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum."}],  
+    "choix3": [{ "numero1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
+                 "numero3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum."}]
+}
