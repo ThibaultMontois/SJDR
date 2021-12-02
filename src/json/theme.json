@@ -1,6 +1,6 @@
 {
     "test": "Ta mère en chaussettes à la plage !!!",
-    "plage": {
+    "beach": {
         "background": "../../public/img/backgrounds/beach.jpg",
         "icon": "../../public/img/icons/beach.png"
     },
