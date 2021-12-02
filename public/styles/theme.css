@@ -3,14 +3,14 @@
 }
 
 #timeline {
-    padding: 10px;
+    padding: 1%;
     background-color: rgba(0, 0, 0, 0.2)
 }
 
 .timeline_icon {
     width: var(--img-size);
     height: var(--img-size);
-    transition: all 1s ease-in-out;
+    transition: all 3s ease-in-out;
 }
 
 /* #timeline ol {
