@@ -10,6 +10,8 @@
     --color-4:#004780;
     --color-5:#2B7FC4;
 
+    --font-size-h1:1.6em;
+    --font-size-h1-mobile:1em;
   
     --borderRadius:5px;
 
@@ -21,11 +23,8 @@ body{
 }
 main{
     background-color: var(--color-1);
-<<<<<<< HEAD
-=======
     background-image: var(--background-image);
     height: 98vh;
->>>>>>> test
 }
 
 nav{
@@ -50,6 +49,11 @@ nav ul li {
 li a {
     text-decoration: none;
     color: var(--color-3);
+}
+
+#liH1{
+    border-style: none;
+    font-size: var(--font-size-h1);
 }
 
 li:hover{ 
@@ -111,6 +115,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 .choose p{
     flex-direction: column;
@@ -120,6 +125,7 @@ p {
     padding: 1% 3%;
     margin-top: 0.5%;
     border-style: groove;
+    width: 50%;
 }
 .choose p:hover{
     background-color: var(--color-2);
@@ -192,12 +198,20 @@ p {
         padding: 1% 3%;
         margin-top: 1.5%;
         border-style: groove;
+        
     }
-    .choose p:first-child{
+    .choose p:first-child{  
         margin-top: 0%;
     }
     .choose p:last-child{
         margin-bottom: 5%;
+    }
+    #liH1{
+        border-style: none;
+        font-size: var(--font-size-h1-mobile);
+    }
+    nav{
+        height: 4vh;   
     }
 
   }
