@@ -7,7 +7,7 @@
         "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?",
         "image": "", 
         "heure": "07:00",
-        "theme": "background_night.jpg",
+        "theme": "night",
         "choix": [
             "Je me rendors un peu, pour être au top de ma forme pour cette magnifique journée qui s'annonce.",
             "Je vérifie mes affaires et me prépare à partir après avoir pris un petit déjeuner.",
@@ -20,7 +20,7 @@
         "histoire": "Vous êtes sur la route. La météo n'est pas à votre avantage: pluie, vent, tout est fait en sorte de vous ralentir.En plus de ca, il y a quelques embouteillages. Vous commencez à stresser car vous n'avez pas envie d'arriver en retard. Que faites-vous?",
         "image": "", 
         "heure": "08:00",
-        "theme": "background_rain.jpg",
+        "theme": "rain",
         "choix": [
             "Je change d'itinéraire pour essayer d'arriver au plus vite.",
             "Vous prenez votre temps, prudence est mère de sureté.",
