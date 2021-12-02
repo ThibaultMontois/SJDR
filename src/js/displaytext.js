@@ -11,5 +11,6 @@ function readJsonFile(file, callback) {
 }
 readJsonFile("../src/json/histoire.json", function(text) {
     let data = JSON.parse(text);
-    document.getElementById("recit").innerHTML = data.histoire1;
+    let bot='<div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>';
+    document.getElementById("recit").innerHTML = '<div class="recit"><div id="bot" class="neutral">'+bot+'</div>'+ "<p class='recit-text'>"+data.histoire1+"</p></div>";
 });
