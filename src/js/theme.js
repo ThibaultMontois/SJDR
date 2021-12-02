@@ -1,7 +1,6 @@
 let theme;
 let background;
 let icon;
-let icon_cible = document.getElementById("timeline").firstElementChild.firstElementChild;
 
 /************************Ouverture du fichier JSON***************************************/
 
@@ -26,8 +25,8 @@ readJsonFile("../src/json/theme.json", function(text) {
 function initiate() {
     background = theme.beach.background;
     icon = theme.beach.icon;
-    document.getElementsByTagName("main")[0].style.backgroundImage = background;
-    icon_cible.style.visibility = "visible";
+    document.getElementsByTagName("main")[0].setAttribute("style", `background-image: url(${background})`);
+    document.getElementsByClassName("timeline_icon")[0].setAttribute("src", icon);
 }
 
 setTimeout(() => initiate(), 100);
@@ -35,7 +34,5 @@ setTimeout(() => initiate(), 100);
 document.getElementById("timeline").addEventListener('click', testChangementClick);
 
 function testChangementClick() {
-    icon_cible.style.visibility = "hidden";
-    icon_cible = icon_cible.nextElementSibling;
-    icon_cible.style.visibility = "visible";
+    console.log("click");
 }

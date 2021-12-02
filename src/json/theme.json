@@ -1,35 +1,35 @@
 {
     "test": "Ta mère en chaussettes à la plage !!!",
     "beach": {
-        "background": "url('./img/backgrounds/beach.jpg')",
+        "background": "./img/backgrounds/beach.jpg",
         "icon": "./img/icons/beach.png"
     },
     "dark_clouds": {
-        "background": "url('./img/backgrounds/dark_clouds.jpg')",
+        "background": "./img/backgrounds/dark_clouds.jpg",
         "icon": "./img/icons/dark_clouds.png"
     }, 
     "light_clouds": {
-        "background": "url('./img/backgrounds/light_clouds.jpg')",
+        "background": "./img/backgrounds/light_clouds.jpg",
         "icon": "./img/icons/light_clouds.png"
     },
     "night": {
-        "background": "url('./img/backgrounds/night.jpg')",
+        "background": "./img/backgrounds/night.jpg",
         "icon": "./img/icons/night.png"
     }, 
     "rain": {
-        "background": "url('./img/backgrounds/rain.jpg')",
+        "background": "./img/backgrounds/rain.jpg",
         "icon": "./img/icons/rain.png"
     },
     "snow": {
-        "background": "url('./img/backgrounds/snow.jpg')",
+        "background": "./img/backgrounds/snow.jpg",
         "icon": "./img/icons/snow.png"
     },
     "storm": {
-        "background": "url('./img/backgrounds/storm.jpg')",
+        "background": "./img/backgrounds/storm.jpg",
         "icon": "./img/icons/storm.png"
     },
     "sun": {
-        "background": "url('./img/backgrounds/sun.jpg')",
+        "background": "./img/backgrounds/sun.jpg",
         "icon": "./img/icons/sun.png"
     }
 }
