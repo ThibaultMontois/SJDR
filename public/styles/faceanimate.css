@@ -189,7 +189,7 @@
   ///////////////////////////////////////////////////////////////////////////////////////////////
   */
   
-  @media screen and (max-width:600px) {
+  @media screen and (min-width:400px, max-width:600px) {
     #bot {
       position: relative;
       text-align: left;

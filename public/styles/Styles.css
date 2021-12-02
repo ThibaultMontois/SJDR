@@ -129,7 +129,7 @@ p {
     margin-top: 2%;
     display: flex;
     flex-direction: row;
-    max-height: 20vh;
+    
 }
 .choose{
     display: flex;
@@ -147,8 +147,75 @@ p {
 }
 .choose p:hover{
     background-color: var(--color-2);
-    transform: matrix3d();
     cursor: url("../img/icons/logo.png"),pointer;
     border-style: groove, outset ;
     transform: translate(1%,1%) ;
 }
+  /*
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  //////                                                                                   //////
+  /////                                                                                     /////
+  ////                              Version Mobile                                           ////
+  ///                                                                                         ///
+  //                                                                                           //
+  /                                                                                             /
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  */
+
+  @media screen and (max-width: 700px) {
+    .recit{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .recit-text{
+        background-color: var(--color-5);
+        margin: 10% 5% 2% 5%;
+        border: solid var(--color-5) 1px;
+        border-radius: var(--borderRadius);
+        width: 80%;
+        padding: 1em;
+        text-align: center;
+        border-radius: 35px;
+        position: relative; 
+    }
+    .recit-text:before{
+        content: "";
+        position: absolute;
+        border-right: 20px solid var(--color-5);
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid var(--color-5);
+        border-top: 20px solid transparent;
+        left: 1.2em;
+        top: -1.8em;
+    }
+    .recit{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .choose{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .choose p{
+        flex-direction: column;
+        margin: 1%;
+        border: var(--color-2) 1px solid;
+        margin: auto;
+        padding: 1% 3%;
+        margin-top: 0.5%;
+        border-style: groove;
+    }
+    .choose p:first-child{
+        margin-top: 0%;
+    }
+      
+  }
