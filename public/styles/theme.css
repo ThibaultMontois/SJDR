@@ -12,22 +12,3 @@
     height: var(--img-size);
     transition: all 3s ease-in-out;
 }
-
-/* #timeline ol {
-    display: flex; 
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 6px 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.3)
-}
-
-#timeline ol li {
-    visibility: hidden;
-}
-
-#timeline ol li img {
-    width: var(--img-size);
-    height: var(--img-size);
-    content: var(--icons-content);
-} */
