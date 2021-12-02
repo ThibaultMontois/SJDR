@@ -4,7 +4,8 @@
   recit.innerHTML=face;
   
 } */
- /* function removefaceanimate(){
+
+/*  function removefaceanimate(){
   const bot=document.getElementById('bot');
   bot.remove();
 } 
