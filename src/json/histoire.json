@@ -1,14 +1,18 @@
 {
-    "histoire1": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?",
-    "histoire2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.2",
-    "histoire3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum. Nunc semper augue volutpat nibh iaculis, ac porta risus efficitur. Donec porta consectetur dui ac venenatis. Cras ullamcorper vel risus id imperdiet. 3",
-    "choix1": [{ "numero1": "Je me rendors un peu, pour être au top de ma forme pour cette magnifique journée qui s'annonce.",
-                 "numero2": "Je vérifie mes affaires et me prépare à partir après avoir pris un petit déjeuner.",
-                 "numero3": "Flemme d'y aller au final, je préfére continuer à passer mes journées à jouer."}],
-    "choix2": [{ "numero1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
-                 "numero2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
-                 "numero3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum."}],  
-    "choix3": [{ "numero1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
-                 "numero2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum.",
-                 "numero3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ipsum."}]
+    "journee": {
+        "debut": "7:00",
+        "fin": "22:00"
+    },
+    "etape1": {
+        "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?",
+        "image": "", 
+        "heure": "7:00",
+        "theme": "night",
+        "choix": [{
+            "choix1":"Je me rendors un peu, pour être au top de ma forme pour cette magnifique journée qui s'annonce.",
+            "choix2":"Je vérifie mes affaires et me prépare à partir après avoir pris un petit déjeuner.",
+            "choix3":"Flemme d'y aller au final, je préfére continuer à passer mes journées à jouer."
+        }
+        ]
+    }
 }
