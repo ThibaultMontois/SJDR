@@ -1,8 +1,17 @@
+let data;
 let theme;
 let background;
 let icon;
 
-/************************Ouverture du fichier JSON***************************************/
+let start_time = "07h00";
+let end_time = "19h00";
+let total_time = 12;
+let actual_time;
+
+
+let x = 0;
+
+/************************ Ouverture du fichier JSON ***************************************/
 
 function readJsonFile(file, callback) {
     let textFile = new XMLHttpRequest();
@@ -17,22 +26,40 @@ function readJsonFile(file, callback) {
 }
 
 readJsonFile("../src/json/theme.json", function(text) {
-    theme = JSON.parse(text);
+    data = JSON.parse(text);
 });
 
 /****************************************************************************/
 
 function initiate() {
-    background = theme.beach.background;
-    icon = theme.beach.icon;
-    document.getElementsByTagName("main")[0].setAttribute("style", `background-image: url(${background})`);
-    document.getElementsByClassName("timeline_icon")[0].setAttribute("src", icon);
+    loadTheme(tab_test[getRandomInt(8)]);
+    document.getElementsByTagName('main')[0].setAttribute('style', `background-image: url(${background})`);
+    document.getElementsByClassName('timeline_icon')[0].setAttribute('src', icon);
+    document.getElementsByClassName('timeline_icon')[0].setAttribute('style', `transform: translate(${x}%)`);
+}
+
+function loadTheme(theme) {
+    background = data[theme].background;
+    icon = data[theme].icon;
 }
 
 setTimeout(() => initiate(), 100);
 
-document.getElementById("timeline").addEventListener('click', testChangementClick);
+/******************************* Test *********************************************/
+
+let tab_test = ['beach', 'dark_clouds', 'light_clouds', 'night', 'rain', 'snow', 'storm', 'sun'];
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+document.addEventListener('click', testChangementClick);
 
 function testChangementClick() {
-    console.log("click");
+    let element = document.getElementsByClassName("timeline_icon")[0];
+    x+=100;
+    loadTheme(tab_test[getRandomInt(8)]);
+    document.getElementsByTagName('main')[0].setAttribute('style', `background-image: url(${background})`);
+    document.getElementsByClassName('timeline_icon')[0].setAttribute('src', icon);
+    element.setAttribute('style', `transform: translate(${x}%)`);
 }

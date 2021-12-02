@@ -10,6 +10,7 @@
 .timeline_icon {
     width: var(--img-size);
     height: var(--img-size);
+    transition: all 1s ease-in-out;
 }
 
 /* #timeline ol {
