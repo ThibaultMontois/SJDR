@@ -11,5 +11,5 @@ function readJsonFile(file, callback) {
 }
 readJsonFile("../src/json/histoire.json", function(text) {
     let data = JSON.parse(text);
-    document.getElementById("recit").innerHTML = data.etape1.choix[0].choix1;
+    document.getElementById("recit").innerHTML = data.etape1.choix[2];
 });
