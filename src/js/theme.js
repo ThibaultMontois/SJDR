@@ -3,12 +3,10 @@ let timeline = document.getElementById("timeline");
 let timeline_icon = document.getElementsByClassName("timeline_icon")[0];
 
 let data;
-/* let theme; */
 let background;
 let icon;
 
 let start_time;
-/* let end_time; */
 let total_time;
 let time;
 
@@ -33,7 +31,7 @@ readJsonFile("../src/json/theme.json", function (text) {
 });
 
 /******************************************************************************/
-/******************************************************************************/
+/************************************ CODE ************************************/
 
 function parseTime(str) {
     let tab = str.split(':');
@@ -42,7 +40,6 @@ function parseTime(str) {
 
 function setInitialTime(start, end) {
     start_time = start;
-    /* end_time = end; */
     total_time = end - start;
 }
 
@@ -61,25 +58,7 @@ function loadTheme(theme) {
     timeline_icon.setAttribute('src', icon);
 }
 
-/******************************************************************************/
-
-window.addEventListener('storage', checkStorageEvent);
-
-function checkStorageEvent(event) {
-    switch(event.key) {
-        case 'heure': changeIconPosition(localStorage.getItem('heure')); break;
-        case 'theme': loadTheme(localStorage.getItem('theme')); break;
-        default: console.log("Ta mère en chaussettes à la plage !!!");
-    }
-}
-
-window.addEventListener('resize', replaceIcon);
-
-function replaceIcon() {
-    changeIconPosition(localStorage.getItem('heure'));
-}
-
-/******************************************************************************/
+/********************************** INITIATE **********************************/
 
 function initiate() {
     setInitialTime(parseTime(localStorage.getItem('debut')), parseTime(localStorage.getItem('fin')));
@@ -87,6 +66,21 @@ function initiate() {
 }
 
 setTimeout(() => initiate(), 150);
+
+/****************************** EVENT LISTENERS *******************************/
+
+setTimeout(() => document.getElementsByClassName('choose')[0].addEventListener('click', checkStorageEvent), 150);
+
+function checkStorageEvent() {
+    setTimeout(() => changeIconPosition(localStorage.getItem('heure')), 150);
+    setTimeout(() => loadTheme(localStorage.getItem('theme')), 150);
+}
+
+window.addEventListener('resize', replaceIcon);
+
+function replaceIcon() {
+    changeIconPosition(localStorage.getItem('heure'));
+}
 
 /******************************************************************************/
 /************************************ TEST ************************************/
