@@ -3,7 +3,7 @@
 }
 
 main {
-    transition: background-image 1s ease-in-out;
+    transition: background-image 0.8s linear;
 }
 
 #timeline {
@@ -16,5 +16,5 @@ main {
 .timeline_icon {
     width: var(--img-size);
     height: var(--img-size);
-    transition: all 3s ease-in-out;
+    transition: transform 3s ease-in-out;
 }
