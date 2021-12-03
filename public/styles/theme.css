@@ -1,9 +1,11 @@
 :root {
-    --img-size: 56px;
+    --img-size: 5%;
 }
 
 #timeline {
+    margin: 0 0.5%;
     padding: 1%;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2)
 }
 
