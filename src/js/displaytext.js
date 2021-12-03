@@ -13,27 +13,31 @@ function readJsonFile(file, callback) {
 }
 readJsonFile("../src/json/histoire.json", function(text) {
     let data = JSON.parse(text);
-
-    document.getElementById("recit").innerHTML = '<div class="recit"><div id="bot" class="neutral">'+bot+'</div><p class="recit-text">'+data.etape1.histoire+"</p></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+data.etape1.choix["0"]+"</p><p id='2' onclick='clickchoix(id)'>"+data.etape1.choix["1"]+"</p><p id='3'  onclick='clickchoix(id)'>"+data.etape1.choix["2"]+"</p></div>";
+    document.getElementById("recit").innerHTML = '<div class="recit-h"><div id="bot" class="neutral">'+bot+'</div><p class="recit-text">'+data.etape1.histoire+"</p></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+data.etape1.choix["0"]+"</p><p id='2' onclick='clickchoix(id)'>"+data.etape1.choix["1"]+"</p><p id='3'  onclick='clickchoix(id)'>"+data.etape1.choix["2"]+"</p></div>";
     let heuredebut = data.journee.debut;
     let heurefin = data.journee.fin;
+    let themebase = data.etape1.theme;
+    let heurebase = data.etape1.heure;
     localStorage.setItem('debut',heuredebut);
     localStorage.setItem('fin',heurefin);
+    localStorage.setItem('theme',themebase);
+    localStorage.setItem('heure',heurebase);
 });
 
 function clickchoix(id){
     index++;
-    const etapeN="etape"+index;
-     /* alert("l'index est "+index+"est l'id est "+id+" et le number etape est "+etapeN);  */
-/*      let recit=document.getElementById("recit-h");
-     recit.remove(); */
+    let recit=document.getElementById("recit-h");
      readJsonFile("../src/json/histoire.json", function(text) {
-        let data = JSON.parse(text);
-        alert(data.etapeN.histoire);        
-        document.getElementById("recit").innerHTML += '<div class="recit-h"><div id="bot" class="neutral">'+bot+'</div><p class="recit-text">'+data.etapeN.histoire+"</p></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+data.etapeN.choix["0"]+"</p><p id='2' onclick='clickchoix(id)'>"+data.etapeN.choix["1"]+"</p><p id='3'  onclick='clickchoix(id)'>"+data.etapeN.choix["2"]+"</p></div>";
+        let data = JSON.parse(text);              
+        document.getElementById("recit").innerHTML = '<div class="recit-h"><div id="bot" class="neutral">'+bot+'</div><p class="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+        let theme = eval(`data.etape${index}.theme`);
+        let heure = eval(`data.etape${index}.heure`);
+        localStorage.setItem('theme',theme);
+        localStorage.setItem('heure',heure);       
     }); 
 }
 
 
 let bot='<div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>';
 
+//Merci à Constantin (et StackOverflow) pour l'aide 
