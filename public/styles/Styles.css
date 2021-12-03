@@ -169,7 +169,7 @@ p {
     .recit-text:before{
         content: "";
         position: absolute;
-        border-right: 20px solid var(--color-5);
+        border-right: 20% solid var(--color-5);
         border-left: 20px solid transparent;
         border-bottom: 20px solid var(--color-5);
         border-top: 20px solid transparent;
