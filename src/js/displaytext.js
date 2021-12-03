@@ -29,12 +29,14 @@ readJsonFile("../src/json/histoire.json", function(text) {
 
  function clickchoix(id){
     index++;
+    faceanimate(); 
     let recit=document.getElementById("recit-h");
      readJsonFile("../src/json/histoire.json", function(text) {
-        let data = JSON.parse(text);              
-        document.getElementById("recit-h").innerHTML = '<div class="recit-header-text"><p class="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div>";
+        let data = JSON.parse(text);  
+                   
+        document.getElementById("recit-h").innerHTML+='<div class="recit-header-text"><p class="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div>";
        let recitm=document.getElementById('recit');
-        recitm.innerHTML+="<div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+        recitm.lastChild.innerHTML="<div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
        let theme = eval(`data.etape${index}.theme`);
         let heure = eval(`data.etape${index}.heure`);
         localStorage.setItem('theme',theme);
@@ -43,5 +45,5 @@ readJsonFile("../src/json/histoire.json", function(text) {
 }
 
 
-
+let bot='<div id="bot" class="neutral"><div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>'
 //Merci à Constantin (et StackOverflow) pour l'aide 
