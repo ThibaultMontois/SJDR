@@ -29,6 +29,9 @@ function clickchoix(id){
         document.getElementById("recit").innerHTML += '<div class="recit-h"><div id="bot" class="neutral">'+bot+'</div><p class="recit-text">'+data.etapeN.histoire+"</p></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+data.etapeN.choix["0"]+"</p><p id='2' onclick='clickchoix(id)'>"+data.etapeN.choix["1"]+"</p><p id='3'  onclick='clickchoix(id)'>"+data.etapeN.choix["2"]+"</p></div>";
     }); 
 }
+<<<<<<< HEAD
 
 
 let bot='<div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>';
+=======
+>>>>>>> b165b90969120d5bb3ff62ca621b0b812b9ca97d
