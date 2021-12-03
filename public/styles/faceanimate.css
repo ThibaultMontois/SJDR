@@ -4,12 +4,12 @@
   #bot {
     position: relative;
     text-align: left;
-    width: 7em;
-    height: 7em;
-    min-width: 4em;
-    min-height: 4em;
+    width: 15em;
+    height: 15em;
+    min-width: 8em;
+    min-height: 8em;
     margin: 0 0 6% 2%;
-    margin-top: 3%;
+    
   }
   
   #head {
@@ -49,7 +49,7 @@
   }
   
   #right-ear {
-    right: -22%;
+    right: -14%;
   }
   
   #left-ear-inner,
@@ -189,16 +189,16 @@
   ///////////////////////////////////////////////////////////////////////////////////////////////
   */
   
-  @media screen and (min-width:400px, max-width:600px) {
+  @media screen and ( max-width:700px) {
     #bot {
       position: relative;
       text-align: left;
-      width: 4em;
-      height: 4em;
+      width: 5em;
+      height: 5em;
       min-width: 2em;
       min-height: 2em;
       margin: 0 0 6% 2%;
-      z-index: auto;
+
     }
     #left-ear,
     #right-ear {
@@ -216,7 +216,7 @@
     }
     
     #right-ear {
-      right: -35%;
+      right: -30%;
     }
     
     #left-ear-inner,
