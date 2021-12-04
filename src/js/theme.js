@@ -50,13 +50,11 @@ function setInitialTimes(start, end) {
 
 function loadBackground(theme) {
     background = data[theme].background;
-
     main.style.background = `url(${background}) no-repeat`;
 }
 
 function loadIcon(theme, is_fading) {
     icon = data[theme].icon;
-
     if (is_fading) {
         timeline_icon.classList.add('timeline_icon_fade');
         setTimeout(() => timeline_icon.setAttribute('src', icon), 1000);
@@ -75,7 +73,6 @@ function loadTheme(theme, is_fading) {
 function changeIconPosition(actual_time) {
     time = parseTime(actual_time) - start_time;
     position = (timeline.offsetWidth - timeline_icon.offsetWidth - getComputedStyle(timeline).padding.split('px', 1) * 2) * (time / total_time);
-
     timeline_icon.style = `transform: translate(${position}px)`;
 }
 
@@ -98,7 +95,6 @@ function resizeWindowEvent() {
 function initiate() {
     setInitialTimes(parseTime(localStorage.getItem('debut')), parseTime(localStorage.getItem('fin')));
     loadTheme(localStorage.getItem('theme'), false);
-
     document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent);
     window.addEventListener('resize', resizeWindowEvent);
 }
