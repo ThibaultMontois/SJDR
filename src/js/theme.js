@@ -76,10 +76,12 @@ function checkStorageEvent() {
     setTimeout(() => loadTheme(localStorage.getItem('theme')), 150);
 }
 
-window.addEventListener('resize', replaceIcon);
+setTimeout(() => window.addEventListener('resize', replaceIcon), 150);
 
 function replaceIcon() {
+    timeline_icon.classList.add('timeline_icon_window_resize');
     changeIconPosition(localStorage.getItem('heure'));
+    setTimeout(() =>  timeline_icon.classList.remove('timeline_icon_window_resize'), 150);
 }
 
 /******************************************************************************/
