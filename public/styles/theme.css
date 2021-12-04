@@ -1,9 +1,10 @@
 :root {
-    --img-size: 5%;
+    --icon-size: 5%;
+    --transition-duration : 2s;
 }
 
 main {
-    transition: background-image 0.8s linear;
+    transition: background-image var(--transition-duration) linear;
 }
 
 #timeline {
@@ -14,7 +15,21 @@ main {
 }
 
 .timeline_icon {
-    width: var(--img-size);
-    height: var(--img-size);
-    transition: transform 3s ease-in-out;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.timeline_icon_fade {
+    animation: fade var(--transition-duration) linear;
+}
+
+.timeline_icon_window_resize {
+    transition: none;
 }
