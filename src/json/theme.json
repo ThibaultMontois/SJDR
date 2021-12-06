@@ -1,35 +1,51 @@
 {
     "test": "Ta mère en chaussettes à la plage !!!",
     "beach": {
-        "background": "../../public/img/backgrounds/beach.jpg",
-        "icon": "../../public/img/icons/beach.png"
+        "background": "./img/backgrounds/beach.jpg",
+        "icon": "./img/icons/beach.png"
     },
     "dark_clouds": {
-        "background": "../../public/img/backgrounds/dark_clouds.jpg",
-        "icon": "../../public/img/icons/dark_clouds.png"
-    }, 
+        "background": "./img/backgrounds/dark_clouds.jpg",
+        "icon": "./img/icons/dark_clouds.png"
+    },
+    "death": {
+        "background": "./img/backgrounds/death.jpg",
+        "icon": "./img/icons/death.png"
+    },
+    "highway": {
+        "background": "./img/backgrounds/highway.jpg",
+        "icon": "./img/icons/highway.png"
+    },
+    "hospital": {
+        "background": "./img/backgrounds/hospital.jpg",
+        "icon": "./img/icons/hospital.png"
+    },
     "light_clouds": {
-        "background": "../../public/img/backgrounds/light_clouds.jpg",
-        "icon": "../../public/img/icons/light_clouds.png"
+        "background": "./img/backgrounds/light_clouds.jpg",
+        "icon": "./img/icons/light_clouds.png"
     },
     "night": {
-        "background": "../../public/img/backgrounds/night.jpg",
-        "icon": "../../public/img/icons/night.png"
+        "background": "./img/backgrounds/night.jpg",
+        "icon": "./img/icons/night.png"
     }, 
     "rain": {
-        "background": "../../public/img/backgrounds/rain.jpg",
-        "icon": "../../public/img/icons/rain.png"
+        "background": "./img/backgrounds/rain.jpg",
+        "icon": "./img/icons/rain.png"
+    },
+    "school": {
+        "background": "./img/backgrounds/school.jpg",
+        "icon": "./img/icons/school.png"
     },
     "snow": {
-        "background": "../../public/img/backgrounds/snow.jpg",
-        "icon": "../../public/img/icons/snow.png"
+        "background": "./img/backgrounds/snow.jpg",
+        "icon": "./img/icons/snow.png"
     },
     "storm": {
-        "background": "../../public/img/backgrounds/storm.jpg",
-        "icon": "../../public/img/icons/storm.png"
+        "background": "./img/backgrounds/storm.jpg",
+        "icon": "./img/icons/storm.png"
     },
     "sun": {
-        "background": "../../public/img/backgrounds/sun.jpg",
-        "icon": "../../public/img/icons/sun.png"
+        "background": "./img/backgrounds/sun.jpg",
+        "icon": "./img/icons/sun.png"
     }
 }

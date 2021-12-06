@@ -1,0 +1,36 @@
+:root {
+    --icon-size: 5%;
+    --transition-duration : 2s;
+}
+
+main {
+    transition: background-image var(--transition-duration) linear;
+background-size: cover;
+}
+
+#timeline {
+    margin: 0% 0.5% 0.5% 0.5%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.timeline_icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.timeline_icon_fade {
+    animation: fade var(--transition-duration) linear;
+}
+
+.timeline_icon_window_resize {
+    transition: none;
+}
