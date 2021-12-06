@@ -11,6 +11,10 @@
         "background": "./img/backgrounds/death.jpg",
         "icon": "./img/icons/death.png"
     },
+    "duck": {
+        "background": "./img/backgrounds/duck.jpg",
+        "icon": "./img/icons/duck.png"
+    },
     "highway": {
         "background": "./img/backgrounds/highway.jpg",
         "icon": "./img/icons/highway.png"
