@@ -11,3 +11,5 @@ function voicetext(){
     let test=new SpeechSynthesisUtterance(Voicetext);
     speechSynthesis.speak(test);
     }
+
+document.addEventListener("reset",speechSynthesis.cancel());
