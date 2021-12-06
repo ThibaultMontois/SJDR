@@ -7,7 +7,15 @@
     "dark_clouds": {
         "background": "./img/backgrounds/dark_clouds.jpg",
         "icon": "./img/icons/dark_clouds.png"
-    }, 
+    },
+    "highway": {
+        "background": "./img/backgrounds/highway.jpg",
+        "icon": "./img/icons/highway.png"
+    },
+    "hospital": {
+        "background": "./img/backgrounds/hospital.jpg",
+        "icon": "./img/icons/hospital.png"
+    },
     "light_clouds": {
         "background": "./img/backgrounds/light_clouds.jpg",
         "icon": "./img/icons/light_clouds.png"
@@ -19,6 +27,10 @@
     "rain": {
         "background": "./img/backgrounds/rain.jpg",
         "icon": "./img/icons/rain.png"
+    },
+    "school": {
+        "background": "./img/backgrounds/school.jpg",
+        "icon": "./img/icons/school.png"
     },
     "snow": {
         "background": "./img/backgrounds/snow.jpg",
