@@ -12,6 +12,7 @@ function readJsonFile(file, callback) {
     textFile.send(null);
 }
 
+
 readJsonFile("../src/json/histoire.json", function(text) {
     let data = JSON.parse(text);
    let recit=document.getElementById('recit')
