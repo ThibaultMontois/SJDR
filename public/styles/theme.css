@@ -5,6 +5,7 @@
 
 main {
     transition: background-image var(--transition-duration) linear;
+background-size: cover;
 }
 
 #timeline {

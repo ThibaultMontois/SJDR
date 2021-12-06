@@ -29,6 +29,7 @@ main{
     background-color: var(--color-1);
     background-image: var(--background-image);
     height: 98vh;
+    width: 100%;
 }
 
 nav{
@@ -98,7 +99,7 @@ p {
     width: 80%;
 }
 
-.recit-text{
+#recit-text{
     background-color: var(--color-5);
     margin: 2% 5%;
     border: solid var(--color-5) 1px;
@@ -111,7 +112,7 @@ p {
     font-size: 1.6em;
     font-family: var(--font-P);
 }
-.recit-text:before{
+#recit-text:before{
     content: "";
     position: absolute;
     border-right: 20px solid var(--color-5);
@@ -170,7 +171,7 @@ p {
         width: 90%;
         margin: auto;
     }
-    .recit-text{
+    #recit-text{
         background-color: var(--color-5);
         margin: 10% 5% 2% 5%;
         border: solid var(--color-5) 1px;
@@ -182,7 +183,7 @@ p {
         position: relative; 
         font-size: 0.9em;
     }
-    .recit-text:before{
+    #recit-text:before{
         content: "";
         position: absolute;
         border-right: 20px solid var(--color-5);
