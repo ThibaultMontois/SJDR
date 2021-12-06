@@ -2,7 +2,7 @@
     "beach": {
         "background": "./img/backgrounds/beach.jpg",
         "icon": {
-            "img": "./img/icons/beach.png",
+            "src": "./img/icons/beach.png",
             "alt": "Icône de plage",
             "author": "Made by Smalllikeart from www.flaticon.com"
         }
@@ -10,7 +10,7 @@
     "dark_clouds": {
         "background": "./img/backgrounds/dark_clouds.jpg",
         "icon": {
-            "img": "./img/icons/dark_clouds.png",
+            "src": "./img/icons/dark_clouds.png",
             "alt": "Icône de nuages sombres",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -18,7 +18,7 @@
     "death": {
         "background": "./img/backgrounds/death.jpg",
         "icon": {
-            "img": "./img/icons/death.png",
+            "src": "./img/icons/death.png",
             "alt": "Icône de mort",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -26,7 +26,7 @@
     "duck": {
         "background": "./img/backgrounds/duck.jpg",
         "icon": {
-            "img": "./img/icons/duck.png",
+            "src": "./img/icons/duck.png",
             "alt": "Icône de canard",
             "author": "Made by Smashingstocksfrom www.flaticon.com"
         }
@@ -34,7 +34,7 @@
     "highway": {
         "background": "./img/backgrounds/highway.jpg",
         "icon": {
-            "img": "./img/icons/highway.png",
+            "src": "./img/icons/highway.png",
             "alt": "Icône de voiture",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -42,7 +42,7 @@
     "hospital": {
         "background": "./img/backgrounds/hospital.jpg",
         "icon": {
-            "img": "./img/icons/hospital.png",
+            "src": "./img/icons/hospital.png",
             "alt": "Icône de coeur",
             "author": "Made by Smashicons from www.flaticon.com"
         }
@@ -50,7 +50,7 @@
     "light_clouds": {
         "background": "./img/backgrounds/light_clouds.jpg",
         "icon": {
-            "img": "./img/icons/light_clouds.png",
+            "src": "./img/icons/light_clouds.png",
             "alt": "Icône de nuages clairs",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -58,7 +58,7 @@
     "night": {
         "background": "./img/backgrounds/night.jpg",
         "icon": {
-            "img": "./img/icons/night.png",
+            "src": "./img/icons/night.png",
             "alt": "Icône de lune",
             "author": "Made by Vectors Market from www.flaticon.com"
         }
@@ -66,7 +66,7 @@
     "night_studying": {
         "background": "./img/backgrounds/night_studying.jpg",
         "icon": {
-            "img": "./img/icons/night_studying.png",
+            "src": "./img/icons/night_studying.png",
             "alt": "Icône de livres avec lampe de chevet",
             "author": "Made by Prosymbols from www.flaticon.com"
         }
@@ -74,7 +74,7 @@
     "rain": {
         "background": "./img/backgrounds/rain.jpg",
         "icon": {
-            "img": "./img/icons/rain.png",
+            "src": "./img/icons/rain.png",
             "alt": "Icône de pluie",
             "author": "Made by Konkapp from www.flaticon.com"
         }
@@ -82,7 +82,7 @@
     "sandwich": {
         "background": "./img/backgrounds/sandwich.jpg",
         "icon": {
-            "img": "./img/icons/sandwich.png",
+            "src": "./img/icons/sandwich.png",
             "alt": "Icône de sandwich",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -90,7 +90,7 @@
     "school": {
         "background": "./img/backgrounds/school.jpg",
         "icon": {
-            "img": "./img/icons/school.png",
+            "src": "./img/icons/school.png",
             "alt": "Icône d'écran d'ordinateur",
             "author": "Made by Kerismaker from www.flaticon.com"
         }
@@ -98,7 +98,7 @@
     "snow": {
         "background": "./img/backgrounds/snow.jpg",
         "icon": {
-            "img": "./img/icons/snow.png",
+            "src": "./img/icons/snow.png",
             "alt": "Icône de neige",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -106,7 +106,7 @@
     "storm": {
         "background": "./img/backgrounds/storm.jpg",
         "icon": {
-            "img": "./img/icons/storm.png",
+            "src": "./img/icons/storm.png",
             "alt": "Icône de tempête",
             "author": "Made by Freepik from www.flaticon.com"
         }
@@ -114,7 +114,7 @@
     "sun": {
         "background": "./img/backgrounds/sun.jpg",
         "icon": {
-            "img": "./img/icons/sun.png",
+            "src": "./img/icons/sun.png",
             "alt": "Icône de soleil",
             "author": "Made by Freepik from www.flaticon.com"
         }
