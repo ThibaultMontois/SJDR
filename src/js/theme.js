@@ -50,7 +50,7 @@ function setInitialTimes(start, end) {
 
 function loadBackground(theme) {
     background = data[theme].background;
-    main.style.background = `url(${background}) no-repeat`;
+    main.style.backgroundImage = `url(${background})`;
 }
 
 function loadIcon(theme, is_fading) {
