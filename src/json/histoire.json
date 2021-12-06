@@ -4,8 +4,7 @@
         "fin": "22:00"
     },
     "etape1": {
-        "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?",
-        "image": "", 
+        "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?", 
         "heure": "07:00",
         "theme": "night",
         "choix": [
@@ -16,15 +15,26 @@
     },
     "etape2": {
         "over": "Vous êtes radié de Pole Emploi et vous passez à côté d'une très bonne formation, dans laquelle vous auriez rencontrer des personnes très sympa.",
-        "supplement": "Vous vous rendormez, vous avez une grande confiance en vous et vous ne mettez pas de réveil. Seulement, au lieu de se rendormir 10 minutes, vous vous réveillez ... 30 minutes plus tard. En panique, vous vous ruez vers votre voiture avec vos affaires pour prendre le volant au plus vite pour ne pas arriver en retard.",
+        "supplement": "Vous vous rendormez, vous avez une grande confiance en vous et vous ne mettez pas de réveil. Seulement, au lieu de se rendormir 10 minutes, vous vous réveillez ... 30 minutes plus tard. En panique, vous vous ruez vers votre voiture avec vos affaires pour prendre le volant au plus vite pour ne pas arriver en retard. ",
         "histoire": "Vous êtes sur la route. La météo n'est pas à votre avantage: pluie, vent, tout est fait en sorte de vous ralentir. En plus de ca, il y a quelques embouteillages. Vous commencez à stresser car vous n'avez pas envie d'arriver en retard. Que faites-vous?",
-        "image": "", 
         "heure": "08:00",
         "theme": "rain",
         "choix": [
             "Je change d'itinéraire pour essayer d'arriver au plus vite.",
             "Vous prenez votre temps, prudence est mère de sureté.",
             "Vous accélérez, en essayant de slalomer sur les voies pour ne pas rater le début de la formation."        
+        ]
+    },
+    "etape3": {
+        "over": "Vous faites de l'aquaplanning à cause de la pluie et avec la vitesse, vous provoquez un accident. Votre voiture est une épave, mais heureusement, vous vous en sortez indemne. Vous loupez donc l'opportunité de suivre la formation de Simplon, mais au moins vous êtes en vie.",
+        "supplement": "Vous essayez de prendre des petits chemins moins embouteillés, mais vous n'êtes pas le seul à avoir eu cette idée. En plus de prendre une route plus longue elle est embouteillée. ",
+        "histoire": "Vous arrivez enfin devant Simplon. Maintenant, le plus dur reste à faire : trouver une place pour se garer. Vous passez à côté d'une place libre à 100m de la porte. Que faites-vous ?",
+        "heure": "08:55",
+        "theme": "dark_clouds",
+        "choix": [
+            "Je continue mon chemin pour trouver une place libre plus proche de la porte.",
+            "Je me gare directement à cette place.",
+            "J'attend que LA place la plus proche de Simplon se libère, flemme de marcher."
         ]
     }
 }
