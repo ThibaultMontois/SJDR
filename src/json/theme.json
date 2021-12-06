@@ -30,7 +30,11 @@
     "night": {
         "background": "./img/backgrounds/night.jpg",
         "icon": "./img/icons/night.png"
-    }, 
+    },
+    "night_studying": {
+        "background": "./img/backgrounds/night_studying.jpg",
+        "icon": "./img/icons/night_studying.png"
+    },
     "rain": {
         "background": "./img/backgrounds/rain.jpg",
         "icon": "./img/icons/rain.png"
