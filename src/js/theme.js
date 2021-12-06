@@ -81,6 +81,7 @@ function changeIconPosition(actual_time) {
 function clickOnChoicesEvent() {
     setTimeout(() => changeIconPosition(localStorage.getItem('heure')), 100);
     setTimeout(() => loadTheme(localStorage.getItem('theme'), true), 100);
+    setTimeout(() => document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent), 100);
 }
 
 function resizeWindowEvent() {
