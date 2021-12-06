@@ -11,7 +11,7 @@ let background;
 let icon;
 
 let start_time;
-let total_time;
+let total_duration;
 let time;
 
 let position;
@@ -43,9 +43,9 @@ function parseTime(str) {
     return parseInt(tab[0]) + parseInt(tab[1]) / 60;
 }
 
-function setInitialTimes(start, end) {
-    start_time = start;
-    total_time = end - start;
+function setInitialTimes() {
+    start_time = parseTime(localStorage.getItem('debut'));
+    total_duration = parseTime(localStorage.getItem('fin')) - start_time;
     time = 0;
 }
 
@@ -77,7 +77,7 @@ function loadTheme(is_fading) {
 
 function changeIconPosition() {
     time = parseTime(localStorage.getItem('heure')) - start_time;
-    position = (timeline.offsetWidth - timeline_icon.offsetWidth - getComputedStyle(timeline).padding.split('px', 1) * 2) * (time / total_time);
+    position = (timeline.offsetWidth - timeline_icon.offsetWidth - getComputedStyle(timeline).padding.split('px', 1) * 2) * (time / total_duration);
     timeline_icon.style = `transform: translate(${position}px)`;
 }
 
@@ -99,7 +99,7 @@ function resizeWindowEvent() {
 /********************************** INITIATE **********************************/
 
 function initiate() {
-    setInitialTimes(parseTime(localStorage.getItem('debut')), parseTime(localStorage.getItem('fin')));
+    setInitialTimes();
     loadTheme(false);
     document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent);
     window.addEventListener('resize', resizeWindowEvent);
