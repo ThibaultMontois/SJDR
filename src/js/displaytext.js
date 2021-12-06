@@ -37,25 +37,36 @@ function clickchoix(id){
     index++;
     let recit=document.getElementById("recit");
      readJsonFile("../src/json/histoire.json", function(text) {
-        let data = JSON.parse(text);                    
-        document.getElementById("recit-h").innerHTML+='<div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div>";
-       let recitm=document.getElementById('recit');
-        recitm.lastChild.innerHTML="<div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
-        data =JSON.parse(text);
-        if (id == 3) {
-        document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.over`)+"</p></div>";
+        let data = JSON.parse(text);
+        if (index >= 11 ){
+            document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.over`)+"</p></div>";
         }
-        else if (id == 2){
-            document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+        else {                    
+            document.getElementById("recit-h").innerHTML+='<div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div>";
+            let recitm=document.getElementById('recit');
+            recitm.lastChild.innerHTML="<div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+            data =JSON.parse(text);
+            if (id == 3) {
+                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.over`)+"</p></div>";
+            }
+            else if (id == 2){
+                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+            }
+            else {
+                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.supplement`)+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+            }
+    }
+        let theme;
+        let heure = eval(`data.etape${index}.heure`);
+        localStorage.setItem('heure',heure); 
+        if (id == 3) {
+            theme = eval(`data.journee.themeover`);
+            localStorage.setItem('theme',theme);
         }
         else {
-            document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.supplement`)+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
+            theme = eval(`data.etape${index}.theme`);
+            localStorage.setItem('theme',theme);
         }
-        let theme = eval(`data.etape${index}.theme`);
-        let heure = eval(`data.etape${index}.heure`);
-        localStorage.setItem('theme',theme);
-        localStorage.setItem('heure',heure); 
-        
     });
     
 }

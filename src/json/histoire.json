@@ -1,7 +1,8 @@
 {
     "journee": {
         "debut": "07:00",
-        "fin": "22:00"
+        "fin": "22:00" ,
+        "themeover": "hospital"
     },
     "etape1": {
         "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?", 
