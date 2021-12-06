@@ -25,6 +25,7 @@ function readJsonFile(file, callback) {
     localStorage.setItem('fin',heurefin);
     localStorage.setItem('theme',themebase);
     localStorage.setItem('heure',heurebase); 
+    1
 }); */
 
 readJsonFile("../src/json/histoire.json", function(text) {
