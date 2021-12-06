@@ -75,8 +75,8 @@ function loadTheme(is_fading) {
     }
 }
 
-function changeIconPosition(actual_time) {
-    time = parseTime(actual_time) - start_time;
+function changeIconPosition() {
+    time = parseTime(localStorage.getItem('heure')) - start_time;
     position = (timeline.offsetWidth - timeline_icon.offsetWidth - getComputedStyle(timeline).padding.split('px', 1) * 2) * (time / total_time);
     timeline_icon.style = `transform: translate(${position}px)`;
 }
@@ -84,14 +84,14 @@ function changeIconPosition(actual_time) {
 /**************************** FOR EVENTS LISTENERS ****************************/
 
 function clickOnChoicesEvent() {
-    setTimeout(() => changeIconPosition(localStorage.getItem('heure')), 100);
+    setTimeout(() => changeIconPosition(), 100);
     setTimeout(() => loadTheme(true), 100);
     setTimeout(() => document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent), 100);
 }
 
 function resizeWindowEvent() {
     timeline_icon.classList.add('timeline_icon_window_resize');
-    changeIconPosition(localStorage.getItem('heure'));
+    changeIconPosition();
     setTimeout(() => timeline_icon.classList.remove('timeline_icon_window_resize'), 100);
 }
 
