@@ -6,6 +6,7 @@ let timeline = document.getElementById("timeline");
 let timeline_icon = document.getElementsByClassName("timeline_icon")[0];
 
 let data;
+let theme;
 let background;
 let icon;
 
@@ -48,12 +49,12 @@ function setInitialTimes(start, end) {
     time = 0;
 }
 
-function loadBackground(theme) {
+function loadBackground() {
     background = data[theme].background;
     main.style.backgroundImage = `url(${background})`;
 }
 
-function loadIcon(theme, is_fading) {
+function loadIcon(is_fading) {
     icon = data[theme].icon;
     if (is_fading) {
         timeline_icon.classList.add('timeline_icon_fade');
@@ -65,9 +66,13 @@ function loadIcon(theme, is_fading) {
     }
 }
 
-function loadTheme(theme, is_fading) {
-    loadBackground(theme);
-    loadIcon(theme, is_fading);
+function loadTheme(is_fading) {
+    let new_theme = localStorage.getItem('theme');
+    if (theme == null || theme != new_theme) {
+        theme = new_theme;
+        loadBackground();
+        loadIcon(is_fading);
+    }
 }
 
 function changeIconPosition(actual_time) {
@@ -80,7 +85,7 @@ function changeIconPosition(actual_time) {
 
 function clickOnChoicesEvent() {
     setTimeout(() => changeIconPosition(localStorage.getItem('heure')), 100);
-    setTimeout(() => loadTheme(localStorage.getItem('theme'), true), 100);
+    setTimeout(() => loadTheme(true), 100);
     setTimeout(() => document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent), 100);
 }
 
@@ -95,7 +100,7 @@ function resizeWindowEvent() {
 
 function initiate() {
     setInitialTimes(parseTime(localStorage.getItem('debut')), parseTime(localStorage.getItem('fin')));
-    loadTheme(localStorage.getItem('theme'), false);
+    loadTheme(false);
     document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent);
     window.addEventListener('resize', resizeWindowEvent);
 }
