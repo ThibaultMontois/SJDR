@@ -8,6 +8,10 @@
         "background": "./img/backgrounds/dark_clouds.jpg",
         "icon": "./img/icons/dark_clouds.png"
     },
+    "death": {
+        "background": "./img/backgrounds/death.jpg",
+        "icon": "./img/icons/death.png"
+    },
     "highway": {
         "background": "./img/backgrounds/highway.jpg",
         "icon": "./img/icons/highway.png"
