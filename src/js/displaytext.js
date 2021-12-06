@@ -51,7 +51,7 @@ function clickchoix(id){
         else {
             document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.supplement`)+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
         }
-       let theme = eval(`data.etape${index}.theme`);
+        let theme = eval(`data.etape${index}.theme`);
         let heure = eval(`data.etape${index}.heure`);
         localStorage.setItem('theme',theme);
         localStorage.setItem('heure',heure); 
