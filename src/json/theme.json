@@ -32,6 +32,10 @@
         "background": "./img/backgrounds/rain.jpg",
         "icon": "./img/icons/rain.png"
     },
+    "sandwich": {
+        "background": "./img/backgrounds/sandwich.jpg",
+        "icon": "./img/icons/sandwich.png"
+    },
     "school": {
         "background": "./img/backgrounds/school.jpg",
         "icon": "./img/icons/school.png"
