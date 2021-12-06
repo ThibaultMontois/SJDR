@@ -54,16 +54,14 @@ function loadBackground() {
 
 function loadIcon(is_fading) {
     let icon = data[theme].icon;
+    timeline_icon.setAttribute('alt', icon.alt);
+    timeline_icon.setAttribute('author', icon.author);
     if (is_fading) {
-        timeline_icon.setAttribute('alt', icon.alt);
-        timeline_icon.setAttribute('author', icon.author);
         timeline_icon.classList.add('timeline_icon_fade');
         setTimeout(() => timeline_icon.setAttribute('src', icon.img), 1000);
         setTimeout(() => timeline_icon.classList.remove('timeline_icon_fade'), 2000);
     }
     else {
-        timeline_icon.setAttribute('alt', icon.alt);
-        timeline_icon.setAttribute('author', icon.author);
         timeline_icon.setAttribute('src', icon.img); 
     }
 }
