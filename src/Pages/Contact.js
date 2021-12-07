@@ -7,21 +7,18 @@ const opendModal= function (e) {
   let fenModal= document.getElementById('dialog');
   fenModal.setAttribute('aria-modal','true');
   fenModal.removeAttribute('aria-hidden');
-  let main= document.querySelector('main')
+/*   let main= document.querySelector('main') */
   modal=fenModal;
-  main.setAttribute("class","hidden");
-  main.removeAttribute('background-image');
+/*   main.setAttribute("class","hidden");
+  main.removeAttribute('background-image'); */
 /*   modal.addEventListener('click', closeModal);
-   modal.getElementById('modal-close').addEventListener('click', closeModal); 
-  modal.getElementById('dialog').addEventListener('click',stopPropagation); */
+   modal.getElementById('modal-close').addEventListener('click', closeModal);  */
+  modal.getElementById('dialog').addEventListener('click',stopPropagation);
 }
 
 
 
-const closeModal=function(e) {
-  e.preventDefault()
-  /* if (modal === null) return */
-
+const closeModal=function() {
 modal.style.display= 'none'
 modal.setAttribute('aria-hiden', 'true')
 modal.removeAttribute('arial-modal')
@@ -32,8 +29,9 @@ modal.getElementById('modal-close').removeEventListener('click', closeModal); */
 const stopPropagation =function (e) {
   e.stopPropagation()
 }
-/* document.getElementById('modal-close').addEventListener('click',closeModal); */
- document.querySelectorAll('c-dialog').forEach(a => {
-  a.addEventListener('click', openModal)
-}) 
-document.getElementById('contact').addEventListener('click',opendModal);
+ document.getElementById('modal-close').addEventListener('click',closeModal); 
+  document.querySelectorAll('c-dialog').forEach(a => {
+  a.addEventListener('click',openModal)
+})  
+document.getElementById('contact-Modal').addEventListener('click',opendModal);
+document.getElementById('modal-close').addEventListener('click',closeModal);
