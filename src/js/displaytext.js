@@ -53,10 +53,10 @@ function clickchoix(id) {
     etape = `etape${++index}`;
     if (index >= 11 || id == 3) {
         recit_text.innerText = json_histoire[etape].over;
-        if (id == 3) {
+        choix.setAttribute('style', 'display: none');
+        if (index < 11 && id == 3) {
             localStorage.setItem('theme', json_histoire.journee.themeover);
         }
-        choix.setAttribute('style', 'display: none');
     }
     else {
         chargeEtape();
