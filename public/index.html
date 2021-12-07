@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Ma journée type chez Simplon </title>
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>       
+            <ul>
                 <li>
-                    <a href="">Accueil</a>          
+                    <a href="">Accueil</a>
                 </li>
-                <li id="liH1"><h1>Ma journée type chez Simplon!</h1></li>
+                <li id="liH1">
+                    <h1>Ma journée type chez Simplon!</h1>
+                </li>
                 <li>
                     <a href="">Contact</a>
                 </li>
@@ -32,24 +36,41 @@
         </nav>
     </header>
     <main>
-        
         <div id=timeline>
             <img class="timeline_icon" src="#" alt="#">
         </div>
         <section id="recit">
-
-          
- <!--            <div id="recit-h">
-            
+            <div id="recit-h">
+                <div id="bot" class="neutral">
+                    <div id="head">
+                        <div id="left-ear">
+                            <div id="left-ear-inner"></div>
+                        </div>
+                        <div id="face">
+                            <div id="eyes">
+                                <div id="left-eye"></div>
+                                <div id="right-eye"></div>
+                            </div>
+                            <div id="mouth"></div>
+                        </div>
+                        <div id="right-ear">
+                            <div id="right-ear-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recit-header-text">
+                    <p id="recit-text"></p>
+                </div>
             </div>
-            <div class='choose'>
-                </div> -->
+            <div class="choose">
+                <p id="1" onclick='clickchoix(id)'></p>
+                <p id="2" onclick='clickchoix(id)'></p>
+                <p id="3" onclick='clickchoix(id)'></p>
+            </div>
         </section>
-
     </main>
+    <script src="../src/js/displaytext.js"></script>
+    <script src="../src/js/theme.js"></script>
 </body>
-<script src="../src/js/faceanimate.js"></script>
-<script src= "../src/js/displaytext.js"></script>
-<script src= "../src/js/theme.js"></script>
-<script src="../src/js/Voice.js"></script>
+
 </html>

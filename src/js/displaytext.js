@@ -1,10 +1,18 @@
-var index= 1;
+const recit_text = document.getElementById('recit-text');
+const choix = document.getElementsByClassName('choose')[0];
+const choix_1 = document.getElementById('1');
+const choix_2 = document.getElementById('2');
+const choix_3 = document.getElementById('3');
+
+let json_histoire;
+let index = 1;
+let etape = `etape${index}`;
 
 function readJsonFile(file, callback) {
     let textFile = new XMLHttpRequest();
     textFile.overrideMimeType("application/json");
     textFile.open("GET", file, true);
-    textFile.onreadystatechange = function() {
+    textFile.onreadystatechange = function () {
         if (textFile.readyState === 4 && textFile.status == "200") {
             callback(textFile.responseText);
         }
@@ -12,64 +20,48 @@ function readJsonFile(file, callback) {
     textFile.send(null);
 }
 
+readJsonFile("../src/json/histoire.json", function (text) {
+    json_histoire = JSON.parse(text);
+});
 
-readJsonFile("../src/json/histoire.json", function(text) {
-    let data = JSON.parse(text);
-   let recit=document.getElementById('recit')
-   document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
-    let heuredebut = data.journee.debut;
-    let heurefin = data.journee.fin;
-    let themebase = data.etape1.theme;
-    let heurebase = data.etape1.heure;
-    localStorage.setItem('debut',heuredebut);
-    localStorage.setItem('fin',heurefin);
-    localStorage.setItem('theme',themebase);
-    localStorage.setItem('heure',heurebase); 
-}); 
-
-function clickchoix(id){
-    setTimeout(() => {
-        speechSynthesis.cancel();
-    }, 0);
-    setTimeout(()=>{
-       voicetext();
-    }, 500);
-    index++;
-    let recit=document.getElementById("recit");
-     readJsonFile("../src/json/histoire.json", function(text) {
-        let data = JSON.parse(text);
-        if (index >= 11 ){
-            document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.over`)+"</p></div>";
-        }
-        else {                    
-            document.getElementById("recit-h").innerHTML+='<div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div>";
-            let recitm=document.getElementById('recit');
-            recitm.lastChild.innerHTML="<div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
-            data =JSON.parse(text);
-            if (id == 3) {
-                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.over`)+"</p></div>";
-            }
-            else if (id == 2){
-                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
-            }
-            else {
-                document.getElementById("recit").innerHTML='<div id="recit-h">'+bot+'</div><div class="recit-header-text"><p id="recit-text">'+eval(`data.etape${index}.supplement`)+eval(`data.etape${index}.histoire`)+"</p></div></div><div class='choose'><p id='1' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["0"]`)+"</p><p id='2' onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["1"]`)+"</p><p id='3'  onclick='clickchoix(id)'>"+eval(`data.etape${index}.choix["2"]`)+"</p></div>";
-            }
-    }
-        let theme;
-        let heure = eval(`data.etape${index}.heure`);
-        localStorage.setItem('heure',heure); 
-        if (id == 3) {
-            theme = eval(`data.journee.themeover`);
-            localStorage.setItem('theme',theme);
-        }
-        else {
-            theme = eval(`data.etape${index}.theme`);
-            localStorage.setItem('theme',theme);
-        }
-    });
-    
+function lireTexte(text) {
+    speechSynthesis.cancel();
+    speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 }
 
-let bot='<div id="bot" class="neutral"><div id="head"><div id="left-ear"><div id="left-ear-inner"></div></div><div id="face"><div id="eyes">  <div id="left-eye"></div><div id="right-eye"></div></div><div id="mouth"></div></div><div id="right-ear"><div id="right-ear-inner"></div></div></div>'
-//Merci à Constantin (et StackOverflow) pour l'aide 
+function chargeTexte(container, text) {
+    //////// TO DO
+}
+
+function chargeEtape() {
+    recit_text.innerText = json_histoire[etape].histoire;
+    choix_1.innerText = json_histoire[etape].choix[0];
+    choix_2.innerText = json_histoire[etape].choix[1];
+    choix_3.innerText = json_histoire[etape].choix[2];
+    localStorage.setItem('theme', json_histoire[etape].theme);
+    localStorage.setItem('heure', json_histoire[etape].heure);
+}
+
+function chargePremiereEtape() {
+    localStorage.setItem('debut', json_histoire.journee.debut);
+    localStorage.setItem('fin', json_histoire.journee.fin);
+    chargeEtape();
+    lireTexte(recit_text.textContent);
+}
+
+function clickchoix(id) {
+    etape = `etape${++index}`;
+    if (index >= 11 || id == 3) {
+        recit_text.innerText = json_histoire[etape].over;
+        if (id == 3) {
+            localStorage.setItem('theme', json_histoire.journee.themeover);
+        }
+        choix.setAttribute('style', 'display: none');
+    }
+    else {
+        chargeEtape();
+    }
+    lireTexte(recit_text.textContent);
+}
+
+setTimeout(() => chargePremiereEtape(index), 100);
