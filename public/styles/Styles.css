@@ -11,6 +11,7 @@
     --color-3:#36A1F7;
     --color-4:#004780;
     --color-5:#2B7FC4;
+    --color-modal-b:#36A1F7;
 
     --font-size-h1:1.6em;
     --font-size-h1-mobile:1em;
@@ -152,6 +153,14 @@ p {
 .choose p:last-child{
     margin-bottom: 5%;
 }
+.nosound{
+    background-image: url("./../img/icons/nosound.svg");
+    width: 3.5vh;
+    height: 3.5vh;
+    background-size: 100%;
+    background-color: var(--color-4);
+    }
+
   /*
   ///////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -258,40 +267,54 @@ p {
 
 
 
-  /* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* dialog overlay */
+  .c-dialog {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    right: 2vh;
+    bottom: 0;
+    left: 2vh;
+    padding: 2.4rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(black, .75);
+    transition: .2s;
+    height: 45vh;
   }
   
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  /* dialog box */
+  .c-dialog__box {
+    flex: 1;
+    max-width: 48rem;
+    margin: auto;
+    padding: 2.4rem;
+    background-color: var(--color-modal-b);
   }
   
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  /* hidden dialog */
+  .c-dialog[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  .js-modal-close
+  {
+
+  }
+
+  #dialog-title{
+      color: var(--white);
+      font-size: 1.5em;
+      font-family: var(--font-P);
+      margin-bottom: 2%;
+      font-weight: bold;
+  }
+  .hidden {
+      background: rgba(0,0,0,0.8);
+  }
+
+  #modal-close{
+      margin-left: 90%;
+      margin-bottom: 5%;
   }
