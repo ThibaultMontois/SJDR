@@ -52,8 +52,14 @@ function chargePremiereEtape() {
 function clickchoix(id) {
     etape = `etape${++index}`;
     if (index >= 11 || id == 3) {
+        if (de == 1){
         recit_text.innerText = json_histoire[etape].over;
         choix.setAttribute('style', 'display: none');
+        }
+        else {
+        recit_text.innerText = json_histoire[etape].over2;
+        choix.setAttribute('style', 'display: none');
+        }
         if (index < 11 && id == 3) {
             localStorage.setItem('theme', json_histoire.journee.themeover);
         }
@@ -63,5 +69,11 @@ function clickchoix(id) {
     }
     lireTexte(recit_text.textContent);
 }
+
+function alea(min, max)
+{
+ return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+var de = alea(1, 2);
 
 setTimeout(() => chargePremiereEtape(index), 100);
