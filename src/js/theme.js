@@ -1,13 +1,6 @@
-/******************************************************************************/
-/********************************* CONSTANTS **********************************/
-
 const main = document.getElementsByTagName('main')[0];
 const timeline = document.getElementById("timeline");
 const timeline_icon = document.getElementsByClassName("timeline_icon")[0];
-// const choix => displaytext.js
-
-/******************************************************************************/
-/****************************** GLOBAL VARIABLES ******************************/
 
 let start_time;
 let total_duration;
@@ -15,18 +8,9 @@ let total_duration;
 let json_theme;
 let theme;
 
-/******************************************************************************/
-/******************************************************************************/
-/***************************** TO READ JSON FILE ******************************/
-
-// function readJsonFile(file, callback) => displaytext.js
-
 readJsonFile("../src/json/theme.json", function (text) {
     json_theme = JSON.parse(text);
 });
-
-/******************************************************************************/
-/********************************* FUNCTIONS **********************************/
 
 function parseTime(str) {
     let tab = str.split(':');
@@ -72,8 +56,6 @@ function changeIconPosition() {
     timeline_icon.style = `transform: translate(${icon_position}px)`;
 }
 
-/**************************** FOR EVENTS LISTENERS ****************************/
-
 function clickOnChoicesEvent() {
     setTimeout(() => changeIconPosition(), 100);
     setTimeout(() => loadTheme(true), 100);
@@ -85,9 +67,6 @@ function resizeWindowEvent() {
     setTimeout(() => timeline_icon.classList.remove('timeline_icon_window_resize'), 100);
 }
 
-/******************************************************************************/
-/********************************** INITIATE **********************************/
-
 function initiate() {
     setInitialTimes();
     loadTheme(false);
@@ -96,8 +75,3 @@ function initiate() {
 }
 
 setTimeout(() => initiate(), 150);
-
-/******************************************************************************/
-/******************************************************************************/
-/*********************************** TESTS ************************************/
-
