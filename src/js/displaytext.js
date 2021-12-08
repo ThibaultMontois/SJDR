@@ -33,16 +33,16 @@ function lireTexte(text) {
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 }
 
-function effaceTexte(conteneur) {
-    index_caractere = 0;
-    conteneur.innerText = '';
-}
-
 function ecrireTexte(conteneur) {
     if (index_caractere < longueur_texte) {
         conteneur.innerHTML += texte[index_caractere++];
         setTimeout(() => ecrireTexte(conteneur), 42);
     }
+}
+
+function effaceTexte(conteneur) {
+    index_caractere = 0;
+    conteneur.innerText = '';
 }
 
 function chargeTexte(conteneur, nouveau_texte) {
@@ -71,21 +71,13 @@ function chargePremiereEtape() {
     chargeEtape();
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 function clickchoix(id) {
     etape = `etape${++index}`;
-
-/*    if (index >= 11 || id == 3) {
-        if (de == 1){
-        recit_text.innerText = json_histoire[etape].over;
-        choix.setAttribute('style', 'display: none');
-        }
-        else {
-        recit_text.innerText = json_histoire[etape].over2;
-        choix.setAttribute('style', 'display: none');
-        }
-        if (index < 11 && id == 3) {
-*/
-    switch (index >= 11 ? 2 : 0 + id == 3 ? 1 : 0) {
+    switch (index >= 11 ? 2 : 0 + id == 3 ? getRandomInt(2) : 0) {
         case 1:
             localStorage.setItem('theme', json_histoire.journee.themeover);
         case 2:
@@ -95,16 +87,18 @@ function clickchoix(id) {
             choix.setAttribute('style', 'display: none');
             break;
         default:
-            texte = id == 1 ? json_histoire[etape].supplement : '';
-            /* texte = id == 2 ? json_histoire[etape].supplement2 : ''; */
+            switch (id) {
+                case '1':
+                    texte = json_histoire[etape].supplement;
+                    break;
+                case '3':
+                    texte = json_histoire[etape].over2;
+                    break;
+                default:
+                    texte = '';
+            }
             chargeEtape();
     }
 }
-
-function alea(min, max)
-{
- return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-var de = alea(1, 2);
 
 setTimeout(() => chargePremiereEtape(index), 100);
