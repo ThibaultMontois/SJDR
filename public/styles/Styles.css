@@ -195,7 +195,7 @@ p {
     background-color: rgba(black, .75); */
     transition: .2s;
     height: 58vh;
-    width: 90%;
+    width: 50%;
     overflow-y: hidden;
     margin: auto;
     text-align: center;
