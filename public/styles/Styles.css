@@ -157,13 +157,6 @@ p {
 .choose p:last-child{
     margin-bottom: 5%;
 }
-.nosound{
-    background-image: url("./../img/icons/nosound.svg");
-    width: 3.5vh;
-    height: 3.5vh;
-    background-size: 100%;
-    background-color: var(--color-4);
-    }
 
   .c-dialog {
     display: flex;
