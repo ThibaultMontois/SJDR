@@ -84,6 +84,7 @@ function clickchoix(id) {
             break;
         default:
             texte = id == 1 ? json_histoire[etape].supplement : '';
+            /* texte = id == 2 ? json_histoire[etape].supplement2 : ''; */
             chargeEtape();
     }
 }
