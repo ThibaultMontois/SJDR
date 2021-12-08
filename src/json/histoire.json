@@ -16,7 +16,7 @@
     },
     "etape2": {
         "over": "Vous êtes radié de Pole Emploi et vous passez à côté d'une très bonne formation, dans laquelle vous auriez rencontrer des personnes très sympa.",
-        "over2": "inextremis",
+        "over2": "Au dernier moment, vous vous reprendez en main et vous décidez d'y aller quand même. ",
         "supplement": "Vous vous rendormez, vous avez une grande confiance en vous et vous ne mettez pas de réveil. Seulement, au lieu de se rendormir 10 minutes, vous vous réveillez ... 30 minutes plus tard. En panique, vous vous ruez vers votre voiture avec vos affaires pour prendre le volant au plus vite pour ne pas arriver en retard. ",
         "histoire": "Vous êtes sur la route. La météo n'est pas à votre avantage: pluie, vent, tout est fait en sorte de vous ralentir. En plus de ca, il y a quelques embouteillages. Vous commencez à stresser car vous n'avez pas envie d'arriver en retard. Que faites-vous?",
         "heure": "08:00",
@@ -29,6 +29,7 @@
     },
     "etape3": {
         "over": "Vous faites de l'aquaplanning à cause de la pluie et avec la vitesse, vous provoquez un accident. Votre voiture est une épave, mais heureusement, vous vous en sortez indemne. Vous loupez donc l'opportunité de suivre la formation de Simplon, mais au moins vous êtes en vie.",
+        "over2": "Vous êtes un vrai pilote et vous réussissez à slalomer entre les véhicules. ",
         "supplement": "Vous essayez de prendre des petits chemins moins embouteillés, mais vous n'êtes pas le seul à avoir eu cette idée. En plus de prendre une route plus longue elle est embouteillée. ",
         "histoire": "Vous arrivez enfin devant Simplon. Maintenant, le plus dur reste à faire : trouver une place pour se garer. Vous passez à côté d'une place libre à 100m de la porte. Que faites-vous ?",
         "heure": "08:55",
@@ -41,6 +42,7 @@
     },
     "etape4": {
         "over": "Vous attendez toute la journée, jamais elle ne se libère. Vous repartez chez vous, dégouter de ne pas avoir réussi à avoir LA place.",
+        "over2" : "Vous avez beaucoup de chance aujourd'hui: la place se libère juste devant vous. ",
         "supplement": "Vous faites plusieurs fois le tour du quartier, pour finalement vous garer sur la place libre que vous aviez vu car il n'y a aucune autre place de libre. ",
         "heure": "09:00",
         "theme": "school",
@@ -53,6 +55,7 @@
     },
     "etape5": {
         "over": "Malheureusement, il vous défonce en 5 secondes, vous avez trop pris la confiance et vous le regrettez. Vous finissez à l'hopital.",
+        "over2" : "Miraculeusement, j'arrive à m'en sortir vivant. ",
         "supplement": "Malheureusement, il ne boit pas de café. Après un petit sermont, vous vous mettez au travail. ",
         "heure": "12:00",
         "theme": "sandwich",
@@ -65,6 +68,7 @@
     },
     "etape6": {
         "over": "Vous trouvez un cheveu dans votre sandwich triangle. Vous trouvez ca dégoutant, vous ne manger donc pas. Vous avez mal au ventre toute l'après-midi, ce qui fait que vous n'êtes pas du tout productif et vous rentrez chez vous.",
+        "over2": "C'était pas ouf, mais ca vous suffit, vous mangerez mieux ce soir. ",
         "supplement": "Quel dommage, tous les micro-ondes sont tombés en panne. Vous allez donc chercher un sandwich au p'tit Louis. ",
         "heure": "15:00",
         "theme": "sun",
@@ -77,6 +81,7 @@
     },
     "etape7": {
         "over": "Ce sujet étant très sensible, votre passion pour les armes vous fait passer pour une personne dangereuse et vous vous faites virez de Simplon.",
+        "over2": "Vous arrivez à expliquer votre passion en rassurant les gens, en disant que votre collection est entièrement légale et démilitarisée. ",
         "supplement": "Ca manque un peu d'originalité, mais votre background rose uni fait son effet. ",
         "heure": "17:00",
         "theme": "duck",
@@ -89,10 +94,11 @@
     },
     "etape8": {
         "over": "Vous avez insultez la sainte boisson qu'est la bière, vous êtes viré de ce groupe et vous rentrez chez vous boire tout seul votre bouteille d'eau.",
+        "over2": "Ils ne sont pas d'accord avec vous, mais ils choisissent un bar qui ne sert pas QUE de la bière pour que vous puissiez venir. ",
         "supplement": "Petit soucis: vous n'avez pas demandé dans quel bar ils allaient. Vous loupez donc la première pinte, le temps de trouver le bar dans lequel ils sont allés. ",
         "heure": "19:00",
         "theme": "highway",
-        "histoire": "Vous buvez une pinte de bière avec vos collègues. L'ambiance est très bonne, mais l'heure de rentrer arrive à grand pas.Vous reprenez votre voiture (vous n'avez bu qu'une bière, vous n'êtes plus jeune conducteur, la consommation excessive d'alcool est dangereuse pour la santé). Vous arrivez au rond point qui est complétement embouteillé, que faites-vous ?",
+        "histoire": "Vous buvez un verre avec vos collègues. L'ambiance est très bonne, mais l'heure de rentrer arrive à grand pas.Vous reprenez votre voiture (vous n'avez bu qu'une bière, vous n'êtes plus jeune conducteur, la consommation excessive d'alcool est dangereuse pour la santé). Vous arrivez au rond point qui est complétement embouteillé, que faites-vous ?",
         "choix": [
             "Vous attendez la bonne occasion pour vous insérer.",
             "Vous forcez le passage, tout en essayant de ne pas percuter de voiture.",
@@ -101,6 +107,7 @@
     },
     "etape9": {
         "over": "En manoeuvrant, vous tappez la voiture derrière vous qui vous collait au cul. Votre journée se finit donc en faisant un constat. ",
+        "over2": "Au moment où vous commencez à faire demi-tour, vous avez une voiture qui vous laisse passer, donc vous pouvez vous insérer. ",
         "supplement": "Vous arrivez à vous insérer ... au bout de 5 bonnes minutes. Vous vous faites klaxonnez en boucle. ",
         "heure": "20:30",
         "theme": "night_studying",
@@ -113,6 +120,7 @@
     },
     "etape10": {
         "over": "Vous allez vous planter demain, et vous allez prendre du retard sur la formation juste parce que vous n'avez pas consacré quelques dizaines de minutes.",
+        "over2": "Vous avez déjà pas mal de connaissance, ca devrait bien se passer. ",
         "supplement": "Vous êtes moins fatiguée, seulement vous avez une grosse baisse de motivation. Vous regardez la vidéo la plus courte sur le language pour avoir les bases, vous apprendrez le reste sur place demain. ",
         "heure": "22:00",
         "theme": "night",
