@@ -16,7 +16,7 @@
     },
     "etape2": {
         "over": "Vous êtes radié de Pole Emploi et vous passez à côté d'une très bonne formation, dans laquelle vous auriez rencontrer des personnes très sympa.",
-        "over2": "Au dernier moment, vous vous reprendez en main et vous décidez d'y aller quand même. ",
+        "over2": "Au dernier moment, vous vous reprenez en main et vous décidez d'y aller quand même. ",
         "supplement": "Vous vous rendormez, vous avez une grande confiance en vous et vous ne mettez pas de réveil. Seulement, au lieu de se rendormir 10 minutes, vous vous réveillez ... 30 minutes plus tard. En panique, vous vous ruez vers votre voiture avec vos affaires pour prendre le volant au plus vite pour ne pas arriver en retard. ",
         "histoire": "Vous êtes sur la route. La météo n'est pas à votre avantage: pluie, vent, tout est fait en sorte de vous ralentir. En plus de ca, il y a quelques embouteillages. Vous commencez à stresser car vous n'avez pas envie d'arriver en retard. Que faites-vous?",
         "heure": "08:00",
@@ -55,7 +55,7 @@
     },
     "etape5": {
         "over": "Malheureusement, il vous défonce en 5 secondes, vous avez trop pris la confiance et vous le regrettez. Vous finissez à l'hopital.",
-        "over2" : "Miraculeusement, j'arrive à m'en sortir vivant. ",
+        "over2" : "Miraculeusement, vous arrivez à vous en sortir vivant. ",
         "supplement": "Malheureusement, il ne boit pas de café. Après un petit sermont, vous vous mettez au travail. ",
         "heure": "12:00",
         "theme": "sandwich",
@@ -68,7 +68,7 @@
     },
     "etape6": {
         "over": "Vous trouvez un cheveu dans votre sandwich triangle. Vous trouvez ca dégoutant, vous ne manger donc pas. Vous avez mal au ventre toute l'après-midi, ce qui fait que vous n'êtes pas du tout productif et vous rentrez chez vous.",
-        "over2": "C'était pas ouf, mais ca vous suffit, vous mangerez mieux ce soir. ",
+        "over2": "C'était pas ouf, mais ça vous suffit, vous mangerez mieux ce soir. ",
         "supplement": "Quel dommage, tous les micro-ondes sont tombés en panne. Vous allez donc chercher un sandwich au p'tit Louis. ",
         "heure": "15:00",
         "theme": "sun",
@@ -82,7 +82,7 @@
     "etape7": {
         "over": "Ce sujet étant très sensible, votre passion pour les armes vous fait passer pour une personne dangereuse et vous vous faites virez de Simplon.",
         "over2": "Vous arrivez à expliquer votre passion en rassurant les gens, en disant que votre collection est entièrement légale et démilitarisée. ",
-        "supplement": "Ca manque un peu d'originalité, mais votre background rose uni fait son effet. ",
+        "supplement": "Ça manque un peu d'originalité, mais votre background rose uni fait son effet. ",
         "heure": "17:00",
         "theme": "duck",
         "histoire": "Votre site est très apprécié, et vous finissez votre journée de formation sur cette présentation. Vos collègues vous proposent d'aller boire une bière en ville pour décompresser de cette journée intense, que faites-vous ?",
@@ -120,7 +120,7 @@
     },
     "etape10": {
         "over": "Vous allez vous planter demain, et vous allez prendre du retard sur la formation juste parce que vous n'avez pas consacré quelques dizaines de minutes.",
-        "over2": "Vous avez déjà pas mal de connaissance, ca devrait bien se passer. ",
+        "over2": "Vous avez déjà pas mal de connaissance, ça devrait bien se passer. ",
         "supplement": "Vous êtes moins fatiguée, seulement vous avez une grosse baisse de motivation. Vous regardez la vidéo la plus courte sur le language pour avoir les bases, vous apprendrez le reste sur place demain. ",
         "heure": "22:00",
         "theme": "night",
