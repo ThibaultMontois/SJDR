@@ -17,6 +17,10 @@
     --font-size-h1-mobile:1em;
     --font-size-p-mobile:1em;
     --font-size-li-a-mobile:0.9em;
+    --font-size-h2-mobile:1em;
+    --font-size-p-mobile-modal:0.9em;
+    --font-size-p:1.5em;
+    --font-size-button:0.7em;
   
     --borderRadius:5px;
     --height-nav-mobile:6vh;
@@ -94,7 +98,7 @@ h1{
 p {
     color: var(--white);
     font-family: var(--font-P);
-    font-size: 1.5em;
+    font-size: var(--font-size-p);
 }
 .recit-header-text{
     width: 80%;
@@ -160,6 +164,78 @@ p {
     background-size: 100%;
     background-color: var(--color-4);
     }
+
+
+  /*
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  //////                                                                                   //////
+  /////                                                                                     /////
+  ////                              Window modale                                            ////
+  ///                                                                                         ///
+  //                                                                                           //
+  /                                                                                             /
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  */
+
+  
+
+  /* dialog overlay */
+  .c-dialog {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    right: 2vh;
+    bottom: 0;
+    left: 2vh; 
+    overflow-y: scroll;
+/*     -webkit-overflow-scrolling: touch;
+    background-color: rgba(black, .75); */
+    transition: .2s;
+    height: 58vh;
+    width: 90%;
+    overflow-y: hidden;
+    margin: auto;
+    text-align: center;
+  }
+  /* dialog box */
+  .c-dialog__box {
+    flex: 1;
+    margin: auto;
+    padding: 1.4rem;
+    background-color: var(--color-modal-b);
+    border-radius: 10px;
+  }
+  
+  /* hidden dialog */
+  .c-dialog[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #dialog-title{
+      color: var(--white);
+      font-size: 1.5em;
+      font-family: var(--font-P);
+      margin-bottom: 2%;
+      font-weight: bold;
+  }
+  .hidden {
+      background: rgba(0,0,0,0.8);
+  }
+
+  #modal-close{
+      margin-left: 90%;
+      margin-bottom: 1%;
+  }
+  #dialog-title{
+    margin-top: 1%;
+}
+#dialog p{
+}
+
 
   /*
   ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -249,72 +325,55 @@ p {
     li a{
         font-size: var(--font-size-li-a-mobile);
     }
-  }
-
-
-  /*
+        /*
   ///////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////
   //////                                                                                   //////
   /////                                                                                     /////
   ////                              Window modale                                            ////
-  ///                                                                                         ///
+  ///                               Version mobile                                            ///
   //                                                                                           //
   /                                                                                             /
   ///////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////
   */
 
-
-
-  /* dialog overlay */
-  .c-dialog {
-    display: flex;
-    position: fixed;
-    z-index: 100;
-    top: 10vh;
-    right: 2vh;
-    bottom: 0;
-    left: 2vh;
-    padding: 2.4rem;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    background-color: rgba(black, .75);
-    transition: .2s;
-    height: 45vh;
-  }
-  
-  /* dialog box */
-  .c-dialog__box {
-    flex: 1;
-    max-width: 48rem;
-    margin: auto;
-    padding: 2.4rem;
-    background-color: var(--color-modal-b);
-  }
-  
-  /* hidden dialog */
-  .c-dialog[aria-hidden="true"] {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .js-modal-close
-  {
-
+    .c-dialog {
+        display: flex;
+        padding: 1em;
+        height: 50vh;
+        width: 80%;
+        font-size: var(--font-size-p-mobile-modal);
+        margin: auto;
+        text-align: center;
+      }
+      #modal-close{
+         /*  position: relative; */
+          margin-left: 70%;
+          margin-bottom: 1%;
+          margin-top: 1%;
+          margin-right: 10%;
+          width: 22%;
+          font-size: var(--font-size-button);
+      }
+       #sendemail{
+        font-size: var(--font-size-button);
+      }
+      /* dialog box */
+      .c-dialog__box {
+        margin: auto;
+        padding: 0.8em;
+        
+      }
+      #dialog-title{
+          font-size: var(--font-size-h2-mobile);
+      }
+      #dialog p{
+          font-size: var(--font-size-p-mobile-modal);
+      }
   }
 
-  #dialog-title{
-      color: var(--white);
-      font-size: 1.5em;
-      font-family: var(--font-P);
-      margin-bottom: 2%;
-      font-weight: bold;
-  }
-  .hidden {
-      background: rgba(0,0,0,0.8);
-  }
 
-  #modal-close{
-      margin-left: 90%;
-      margin-bottom: 5%;
-  }
+
+
+
