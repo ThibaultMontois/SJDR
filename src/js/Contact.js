@@ -6,14 +6,7 @@ const opendModal= function (e) {
     fenModal.setAttribute('aria-modal','true')
     fenModal.removeAttribute('aria-hidden')
     fenModal.style.visibility= 'visible';
-/*   let main= document.querySelector('main') */
-/*   main.setAttribute("class","hidden");
-  main.removeAttribute('background-image'); */
-/*   modal.addEventListener('click', closeModal);
-   modal.getElementById('modal-close').addEventListener('click', closeModal); 
-   document.getElementById('dialog').removeEventListener('click', opendModal);  */
   document.getElementById('modal-close').addEventListener('click', closeModal); 
-/*   document.getElementById('c-dialog').addEventListener('click',stopPropagation); */
 }
 
 
@@ -25,8 +18,6 @@ const opendModal= function (e) {
   modal.removeAttribute('aria-modal');
   document.getElementById('dialog').removeEventListener('click', opendModal);
 document.getElementById('modal-close').removeEventListener('click', closeModal);
-/* modal.removeEventListener('click', closeModal)
-modal.getElementById('modal-close').removeEventListener('click', closeModal); */
 }
  
   const stopPropagation =function (e) {
@@ -52,6 +43,4 @@ function sendEmail(){
 }
 
 document.getElementById('contact-Modal').addEventListener('click',opendModal);
-document.getElementById('modal-close').addEventListener('click',closeModal); 
-
-
+document.getElementById('modal-close').addEventListener('click',closeModal);
