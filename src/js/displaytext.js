@@ -53,8 +53,7 @@ function chargeTexte(conteneur, nouveau_texte) {
     lireTexte(texte);
 }
 
-function chargeEtape(id) {
-    texte = id == 1 ? json_histoire[etape].supplement : '';
+function chargeEtape() {
     chargeTexte(recit_text, json_histoire[etape].histoire);
     choix_1.innerText = json_histoire[etape].choix[0];
     choix_2.innerText = json_histoire[etape].choix[1];
@@ -67,8 +66,9 @@ function chargePremiereEtape() {
     localStorage.setItem('debut', json_histoire.journee.debut);
     localStorage.setItem('fin', json_histoire.journee.fin);
     index = 1;
-    etape = `etape${index}`;
-    chargeEtape(0);
+    etape = `etape1`;
+    texte = '';
+    chargeEtape();
 }
 
 function clickchoix(id) {
@@ -78,11 +78,13 @@ function clickchoix(id) {
             localStorage.setItem('theme', json_histoire.journee.themeover);
         case 2:
         case 3:
+            texte = '';
             chargeTexte(recit_text, json_histoire[etape].over);
             choix.setAttribute('style', 'display: none');
             break;
         default:
-            chargeEtape(id);
+            texte = id == 1 ? json_histoire[etape].supplement : '';
+            chargeEtape();
     }
 }
 
