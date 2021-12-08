@@ -37,7 +37,7 @@ function loadIcon(is_fading) {
         setTimeout(() => timeline_icon.classList.remove('timeline_icon_fade'), 2000);
     }
     else {
-        timeline_icon.setAttribute('src', icon.src); 
+        timeline_icon.setAttribute('src', icon.src);
     }
 }
 
