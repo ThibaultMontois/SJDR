@@ -5,7 +5,7 @@
         "themeover": "hospital"
     },
     "etape1": {
-        "histoire": "... Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?", 
+        "histoire": "Driiiiing ! Driiiiing ! Vous entendez le réveil sonner, ce qui annonce le début de la journée. Vous allumez la lumière, vous vous levez. Vous effectuez votre rituel du matin, tout se passe comme d'habitude. Mais aujourd'hui est une journée unique: vous commencez votre formation à Simplon, à Lille. Que faites-vous pour préparer cette journée ?", 
         "heure": "07:00",
         "theme": "night",
         "choix": [
@@ -78,7 +78,7 @@
         "over": "Ce sujet étant très sensible, votre passion pour les armes vous fait passer pour une personne dangereuse et vous vous faites virez de Simplon.",
         "supplement": "Ca manque un peu d'originalité, mais votre background rose uni fait son effet. ",
         "heure": "17:00",
-        "theme": "canard",
+        "theme": "duck",
         "histoire": "Votre site est très apprécié, et vous finissez votre journée de formation sur cette présentation. Vos collègues vous proposent d'aller boire une bière en ville pour décompresser de cette journée intense, que faites-vous ?",
         "choix": [
             "Je leur dis que je les rejoins un peu plus tard.",
@@ -90,7 +90,7 @@
         "over": "Vous avez insultez la sainte boisson qu'est la bière, vous êtes viré de ce groupe et vous rentrez chez vous boire tout seul votre bouteille d'eau.",
         "supplement": "Petit soucis: vous n'avez pas demandé dans quel bar ils allaient. Vous loupez donc la première pinte, le temps de trouver le bar dans lequel ils sont allés. ",
         "heure": "19:00",
-        "theme": "transport",
+        "theme": "highway",
         "histoire": "Vous buvez une pinte de bière avec vos collègues. L'ambiance est très bonne, mais l'heure de rentrer arrive à grand pas.Vous reprenez votre voiture (vous n'avez bu qu'une bière, vous n'êtes plus jeune conducteur, la consommation excessive d'alcool est dangereuse pour la santé). Vous arrivez au rond point qui est complétement embouteillé, que faites-vous ?",
         "choix": [
             "Vous attendez la bonne occasion pour vous insérer.",

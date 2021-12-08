@@ -4,6 +4,7 @@
 const main = document.getElementsByTagName('main')[0];
 const timeline = document.getElementById("timeline");
 const timeline_icon = document.getElementsByClassName("timeline_icon")[0];
+// const choix => displaytext.js
 
 /******************************************************************************/
 /****************************** GLOBAL VARIABLES ******************************/
@@ -11,27 +12,17 @@ const timeline_icon = document.getElementsByClassName("timeline_icon")[0];
 let start_time;
 let total_duration;
 
-let data;
+let json_theme;
 let theme;
 
 /******************************************************************************/
 /******************************************************************************/
 /***************************** TO READ JSON FILE ******************************/
 
-function readJsonFile(file, callback) {
-    let textFile = new XMLHttpRequest();
-    textFile.overrideMimeType("application/json");
-    textFile.open("GET", file, true);
-    textFile.onreadystatechange = function () {
-        if (textFile.readyState === 4 && textFile.status == "200") {
-            callback(textFile.responseText);
-        }
-    };
-    textFile.send(null);
-}
+// function readJsonFile(file, callback) => displaytext.js
 
 readJsonFile("../src/json/theme.json", function (text) {
-    data = JSON.parse(text);
+    json_theme = JSON.parse(text);
 });
 
 /******************************************************************************/
@@ -48,21 +39,21 @@ function setInitialTimes() {
 }
 
 function loadBackground() {
-    let background = data[theme].background;
+    let background = json_theme[theme].background;
     main.style.backgroundImage = `url(${background})`;
 }
 
 function loadIcon(is_fading) {
-    let icon = data[theme].icon;
+    let icon = json_theme[theme].icon;
     timeline_icon.setAttribute('alt', icon.alt);
     timeline_icon.setAttribute('author', icon.author);
     if (is_fading) {
         timeline_icon.classList.add('timeline_icon_fade');
-        setTimeout(() => timeline_icon.setAttribute('src', icon.img), 1000);
+        setTimeout(() => timeline_icon.setAttribute('src', icon.src), 1000);
         setTimeout(() => timeline_icon.classList.remove('timeline_icon_fade'), 2000);
     }
     else {
-        timeline_icon.setAttribute('src', icon.img); 
+        timeline_icon.setAttribute('src', icon.src); 
     }
 }
 
@@ -86,7 +77,6 @@ function changeIconPosition() {
 function clickOnChoicesEvent() {
     setTimeout(() => changeIconPosition(), 100);
     setTimeout(() => loadTheme(true), 100);
-    setTimeout(() => document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent), 100);
 }
 
 function resizeWindowEvent() {
@@ -101,11 +91,11 @@ function resizeWindowEvent() {
 function initiate() {
     setInitialTimes();
     loadTheme(false);
-    document.getElementsByClassName('choose')[0].addEventListener('click', clickOnChoicesEvent);
+    choix.addEventListener('click', clickOnChoicesEvent);
     window.addEventListener('resize', resizeWindowEvent);
 }
 
-setTimeout(() => initiate(), 100);
+setTimeout(() => initiate(), 150);
 
 /******************************************************************************/
 /******************************************************************************/
