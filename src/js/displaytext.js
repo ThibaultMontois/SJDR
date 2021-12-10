@@ -101,4 +101,4 @@ function clickchoix(id) {
     }
 }
 
-setTimeout(() => chargePremiereEtape(index), 100);
+setTimeout(() => chargePremiereEtape(index), 150);
