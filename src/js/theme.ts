@@ -1,42 +1,51 @@
-"use strict";
 /******************************************************************************/
 /********************************* CONSTANTS **********************************/
-const main = document.getElementsByTagName('main')[0];
-const timeline = document.getElementById("timeline");
-const timeline_icon = document.getElementsByClassName("timeline_icon")[0];
+
+const main = document.getElementsByTagName('main')[0] as HTMLElement;
+const timeline = document.getElementById("timeline") as HTMLElement;
+const timeline_icon = document.getElementsByClassName("timeline_icon")[0] as HTMLImageElement;
 // const choix => displaytext.js
+
 /******************************************************************************/
 /****************************** GLOBAL VARIABLES ******************************/
-let start_time;
-let total_duration;
-let json_theme;
-let theme;
+
+let start_time: number;
+let total_duration: number;
+
+let json_theme: any;
+let theme: string;
+
 /******************************************************************************/
 /******************************************************************************/
 /***************************** TO READ JSON FILE ******************************/
+
 // function readJsonFile(file, callback) => displaytext.js
-readJsonFile("../src/json/theme.json", function (text) {
+
+readJsonFile("../src/json/theme.json", function (text: string): void {
     json_theme = JSON.parse(text);
 });
+
 /******************************************************************************/
 /********************************* FUNCTIONS **********************************/
-function parseTime(str) {
+
+function parseTime(str: string): number {
     let tab = str.split(':');
     return parseInt(tab[0]) + parseInt(tab[1]) / 60;
 }
-function setInitialTimes() {
+
+function setInitialTimes(): void {
     let debut = localStorage.getItem('debut');
     let fin = localStorage.getItem('fin');
-    if (debut)
-        start_time = parseTime(debut);
-    if (fin)
-        total_duration = parseTime(fin) - start_time;
+    if (debut) start_time = parseTime(debut);
+    if (fin) total_duration = parseTime(fin) - start_time;
 }
-function loadBackground() {
+
+function loadBackground(): void {
     let background = json_theme[theme].background;
     main.style.backgroundImage = `url(${background})`;
 }
-function loadIcon(is_fading) {
+
+function loadIcon(is_fading: boolean): void {
     let icon = json_theme[theme].icon;
     timeline_icon.setAttribute('alt', icon.alt);
     timeline_icon.setAttribute('author', icon.author);
@@ -45,10 +54,10 @@ function loadIcon(is_fading) {
         setTimeout(() => timeline_icon.setAttribute('src', icon.src), 1000);
         setTimeout(() => timeline_icon.classList.remove('timeline_icon_fade'), 2000);
     }
-    else
-        timeline_icon.setAttribute('src', icon.src);
+    else timeline_icon.setAttribute('src', icon.src);
 }
-function loadTheme(is_fading) {
+
+function loadTheme(is_fading: boolean): void {
     let new_theme = localStorage.getItem('theme');
     if (new_theme && (!theme || theme != new_theme)) {
         theme = new_theme;
@@ -56,7 +65,8 @@ function loadTheme(is_fading) {
         loadIcon(is_fading);
     }
 }
-function changeIconPosition() {
+
+function changeIconPosition(): void {
     let heure = localStorage.getItem('heure');
     if (heure) {
         let time = parseTime(heure) - start_time;
@@ -64,25 +74,33 @@ function changeIconPosition() {
         timeline_icon.setAttribute('style', `transform: translate(${icon_position}px)`);
     }
 }
+
 /**************************** FOR EVENTS LISTENERS ****************************/
-function clickOnChoicesEvent() {
+
+function clickOnChoicesEvent(): void {
     setTimeout(() => changeIconPosition(), 100);
     setTimeout(() => loadTheme(true), 100);
 }
-function resizeWindowEvent() {
+
+function resizeWindowEvent(): void {
     timeline_icon.classList.add('timeline_icon_window_resize');
     changeIconPosition();
     setTimeout(() => timeline_icon.classList.remove('timeline_icon_window_resize'), 100);
 }
+
 /******************************************************************************/
 /********************************** INITIATE **********************************/
-function initiate() {
+
+function initiate(): void {
     setInitialTimes();
     loadTheme(false);
     choix.addEventListener('click', clickOnChoicesEvent);
     window.addEventListener('resize', resizeWindowEvent);
 }
+
 setTimeout(() => initiate(), 150);
+
 /******************************************************************************/
 /******************************************************************************/
 /*********************************** TESTS ************************************/
+
